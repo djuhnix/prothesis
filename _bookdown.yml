@@ -1,5 +1,5 @@
-book_filename: "memo-template"
-repo: https://github.com/djuhnix/memo-template/
+book_filename: "prothesis_germain"
+repo: https://github.com/djuhnix/prothesis/
 output_dir: docs
 delete_merged_file: true
 language:

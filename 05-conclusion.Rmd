@@ -1,0 +1,47 @@
+# Conclusion
+
+En conclusion, à l\'ère où l\'agilité et la réactivité sont essentielles
+pour rester compétitif, il devient impératif d\'intégrer la sécurité dès
+les premières phases du développement mais également faire évoluer ses
+processus de détection et de réponse en automatisant les tâches
+répétitives.
+
+Nous nous sommes demandé en début de cette thèse professionnelle comment
+la mise en place des pratiques de sécurité automatisée au sein des
+processus de développement peut améliorer la résistance des systèmes
+d\'information aux menaces qui pèsent sur une organisation et augmenter
+la performance des équipes de sécurité car nous avons pris conscience de
+la charge de travail imputé aux équipes de sécurité dans un monde où
+presque toutes les équipes participant au développement d'un produit
+prennent des décisions de sécurité impactant toute l'organisation. D'où
+la nécessité de faire évoluer nos pratiques dans une vision
+collaborative de la sécurité de l'information.
+
+Au vu de ce qui précède, l'industrie recommande aujourd'hui d'opter pour
+une approche de Shift Left où nous intégrant la sécurité au plus tôt
+dans le cycle de développement. À cela nous ajoutons une part
+d'automatisation au sein des phases de détection de la menace et de
+réponse à incident pour redonner de la vélocité aux équipes perdant du
+temps dans des tâches sans grande valeur ajoutée à leur mission.
+
+Il est cependant intéressant de noter qu'un cycle de développement
+sécurisé ne comble pas un manquement de sécurité physique. De plus
+l'automatisation des processus peut grandement nous être utile tout en
+ajoutant des problèmes annexes comme le maintien des outils développés,
+la gestion des faux positifs impliquant d'améliorer les algorithmes
+développés ou d'appliquer des règles plus fines ou encore l'augmentation
+de la surface d'attaque de l'organisation en laisser passer de nouvelles
+vulnérabilités. Avec l'automatisation vient également un risque de perte
+de compétences, il devient difficile d'apprendre à de nouvelles recrues
+les tâches basiques si elles sont toutes automatisées. Enfin si tout le
+système mis en place vient à ne plus fonctionner et que les personnes en
+charge ne savent plus réaliser les tâches automatisées de manière
+manuelle, l'automatisation devient plus une épée de Damoclès qu'une
+solution au manque d'efficacité de l'équipe.
+
+En fin de compte l'automatisation des processus de sécurité et
+l'intégration de la sécurité au plus tôt dans le cycle de développement
+ne sont pas des solutions miracles mais sont des outils à utiliser de
+manière intelligente et sans dépendance pour que notre voyage nous
+semble léger.
+

@@ -7,7 +7,7 @@ bookdown::gitbook:
   config:
     toc:
       before: |
-        <li><a href="./">Memo Template - title to be changed</a></li>
+        <li><a href="./">Thèse professionnelle - Automatisation des processus de sécurité</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
     download: [pdf]

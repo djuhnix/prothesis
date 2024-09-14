@@ -1,0 +1,51 @@
+# Annexes
+
+## Le cycle de développement sécurisé
+
+![](./media/image11.png)
+
+
+## Fonctionnalités d'une solution de sensibilisation à la sécurité
+
+  **Fonctionnalité**                                               **Priorité**
+  ---------------------------------------------------------------- --------------
+  Simulateur de campagne de phishing                               1
+  Personnaliser le contenu                                         1
+  Catalogue de cours et de documents de formation                  1
+  Variété de modèles                                               1
+  Intégration Slack                                                1
+  Automatiser les simulations de phishing                          2
+  Rapports d\'analyse                                              2
+  Attribution de contenu dynamique                                 2
+  Suivi de l\'apprentissage                                        2
+  Gamification de la sensibilisation                               2
+  Interface Web                                                    2
+  Facile à utiliser                                                2
+  Simulation de pièces jointes à des courriels                     3
+  Évaluation du risque sur le point de défaillance de l\'employé   3
+  Possibilité pour l\'utilisateur de signaler un courriel          3
+  Interface graphique                                              4
+  IA / Holistique                                                  4
+
+[]Tableau 1 Tableau de priorisation des
+fonctionnalités d\'une solution de sensibilisation à la sécurité
+
+[^1]: Mentionné dans la conférence : [To Automate or Not to Automate :
+    That is the Incident Response
+    Question](https://www.youtube.com/watch?v=P1ghXLKb_1Y)
+
+[^2]: L'article de RedHat [*Shift-Left vs
+    Shift-Right*](https://www.redhat.com/en/topics/devops/shift-left-vs-shift-right)
+    aborde en profondeur ce sujet.
+
+[^3]: [OWASP DevSecOps
+    Guideline](https://owasp.org/www-project-devsecops-guideline/)
+
+[^4]: [What is
+    DevSecOps](https://www.devsecops.org/blog/2015/2/15/what-is-devsecops)
+
+[^5]: [Shifting Security to the
+    Left](https://www.devsecops.org/blog/2016/5/20/-security)
+
+[^6]: [OWASP DevSecOps
+    Guideline](https://owasp.org/www-project-devsecops-guideline/)

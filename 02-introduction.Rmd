@@ -1,0 +1,55 @@
+# Introduction
+
+Mes deux ans d\'alternance au sein de la société Shadow m\'ont montré à
+quel point elle déploie des efforts pour optimiser son processus de
+déploiement. Shadow possède deux produits : Shadow PC, un ordinateur à
+hautes performances dans le Cloud accessible depuis n'importe quel
+périphérique et Shadow Drive, le stockage en ligne souverain. La gestion
+de ces deux produits nécessite le développement de plusieurs outils
+internes, avec cela un nombre de processus de maintenance assez élevés.
+Pour garder un niveau de qualité élevé et une rapidité dans ces
+processus, Shadow a misé sur l\'automatisation du déploiement de
+nombreux de ses services avec la mise en place de pratiques DevOps assez
+avancées. Au sein de l\'équipe sécurité nous avons senti le besoin de
+s\'adapter à cette évolution en procédant à un Shift Left, c'est-à-dire
+insérer les tests de sécurité au plus tôt au sein du cycle de
+développement pour trouver et corriger les vulnérabilités le plus tôt
+possible. En opposé au Shift Right qui consiste à exécuter des tests,
+surveiller le comportement de l'utilisateur et les paramètres de
+sécurité quand le produit est déjà opérationnel.
+
+La plupart des décisions de sécurité sont prises lors des processus de
+développement et de mise en condition opérationnelle par ces équipes et
+les équipes de sécurité ne prennent que très rarement des décisions qui
+impliquent directement le produit mais plutôt quand il s'agit d'évaluer
+ou atténuer un risque. Il est difficile de se prémunir de catastrophes
+commerciales et métier en appliquant des mesures avant la définition des
+stratégies de sécurité. Pourtant ce mode de fonctionnement est encore
+courant et ralentit la vélocité des équipes de développement.
+
+Pour éviter de découvrir des vulnérabilités trop tard et de ne réagir
+qu'en cas d'incident, il est intéressant de se demander comment la mise
+en place des pratiques de sécurité automatisées au sein des processus de
+développement peut améliorer la résistance des systèmes d\'information
+aux menaces qui pèsent sur une organisation et augmenter la performance
+des équipes de sécurité. En tant qu'apprenti chez Shadow j'ai eu le rôle
+de mener une analyse comparative et de mettre en place ces pratiques
+afin d'évaluer l'apport en productivité de l'amélioration de nos
+processus.
+
+Notre objectif à présent est de confronter les visions communes et
+acceptées par l'industrie sur ce sujet en apportant des pistes
+d'amélioration et en ajoutant de la valeur sur les défauts apparents. De
+ce fait pour développer la réponse à cette problématique nous allons
+étudier l'état de l'art en matière d'automatisation des processus de
+sécurité et les bénéfices que cela peut apporter tout en analysant les
+méthodologies de mise en place des pratiques et les outils à intégrer.
+En parallèle nous discuterons de l'implémentation de ces mesures au sein
+de Shadow, nous créerons un environnement propice à la pratique des
+compétences nécessaires à la mise en place de ces méthodologies. Enfin
+nous ne manquerons pas de lister les limites de ces pratiques et
+d'aborder les sujets allant au-delà de cette problématique. Toutefois
+nous ne saurons commencer sans relater le contexte de la sécurité de
+l'information et les raisons derrière l'automatisation des processus qui
+font ce domaine.
+
