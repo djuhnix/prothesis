@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapitre 5 Etat de l'art de l'automatisation des processus de sécurité | Automatisation des processus de sécurité</title>
+  <meta name="description" content="Thèse professionnelle réalisée dans le cadre de mon Mastère Spécialisé Expert Cybersécurité en alternance chez Shadow" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapitre 5 Etat de l'art de l'automatisation des processus de sécurité | Automatisation des processus de sécurité" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="https://bookdown.org/yihui/rmarkdown//assets/img/utt_banner.jpg" />
+  <meta property="og:description" content="Thèse professionnelle réalisée dans le cadre de mon Mastère Spécialisé Expert Cybersécurité en alternance chez Shadow" />
+  <meta name="github-repo" content="djuhnix/prothesis" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapitre 5 Etat de l'art de l'automatisation des processus de sécurité | Automatisation des processus de sécurité" />
+  
+  <meta name="twitter:description" content="Thèse professionnelle réalisée dans le cadre de mon Mastère Spécialisé Expert Cybersécurité en alternance chez Shadow" />
+  <meta name="twitter:image" content="https://bookdown.org/yihui/rmarkdown//assets/img/utt_banner.jpg" />
+
+<meta name="author" content="Germain Jr. OLEA-OYOUGOU" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="introduction.html"/>
+<link rel="next" href="mise-en-place-des-pratiques-au-sein-de-shadow.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+<link rel="stylesheet" href="assets/css/toc.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Thèse professionnelle - Automatisation des processus de sécurité</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Résumé</a></li>
+<li class="chapter" data-level="2" data-path="glossaire.html"><a href="glossaire.html"><i class="fa fa-check"></i><b>2</b> Glossaire</a></li>
+<li class="chapter" data-level="3" data-path="déclaration-sur-lhonneur.html"><a href="déclaration-sur-lhonneur.html"><i class="fa fa-check"></i><b>3</b> Déclaration sur l’honneur</a></li>
+<li class="chapter" data-level="4" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>4</b> Introduction</a></li>
+<li class="chapter" data-level="5" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><i class="fa fa-check"></i><b>5</b> Etat de l'art de l'automatisation des processus de sécurité</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#contexte-sur-lautomatisation-des-processus-de-sécurité"><i class="fa fa-check"></i><b>5.1</b> Contexte sur l’automatisation des processus de sécurité</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#la-sécurité-informatique"><i class="fa fa-check"></i><b>5.1.1</b> La sécurité informatique</a></li>
+<li class="chapter" data-level="5.1.2" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#les-processus-de-sécurité-automatisées"><i class="fa fa-check"></i><b>5.1.2</b> Les processus de sécurité automatisées</a></li>
+<li class="chapter" data-level="5.1.3" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#le-cycle-de-développement-sécurisé"><i class="fa fa-check"></i><b>5.1.3</b> Le cycle de développement sécurisé</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#introduction-à-lautomatisation"><i class="fa fa-check"></i><b>5.2</b> Introduction à l’automatisation</a></li>
+<li class="chapter" data-level="5.3" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#prévention-et-devsecops"><i class="fa fa-check"></i><b>5.3</b> Prévention et DevSecOps</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#culture-devsecops"><i class="fa fa-check"></i><b>5.3.1</b> Culture DevSecOps</a></li>
+<li class="chapter" data-level="5.3.2" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#comprendre-son-besoin-en-sécurité"><i class="fa fa-check"></i><b>5.3.2</b> Comprendre son besoin en sécurité</a></li>
+<li class="chapter" data-level="5.3.3" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#conception-sécurisé-et-industrialisation-des-tests"><i class="fa fa-check"></i><b>5.3.3</b> Conception sécurisé et industrialisation des tests</a></li>
+<li class="chapter" data-level="5.3.4" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#surveiller-continuellement"><i class="fa fa-check"></i><b>5.3.4</b> Surveiller continuellement</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#détection-de-nouvelles-menaces"><i class="fa fa-check"></i><b>5.4</b> Détection de nouvelles menaces</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#détection-au-sein-du-réseau"><i class="fa fa-check"></i><b>5.4.1</b> Détection au sein du réseau</a></li>
+<li class="chapter" data-level="5.4.2" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#détection-au-sein-des-terminaux-du-système-informatique"><i class="fa fa-check"></i><b>5.4.2</b> Détection au sein des terminaux du système informatique</a></li>
+<li class="chapter" data-level="5.4.3" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#gestion-des-événements-détecter"><i class="fa fa-check"></i><b>5.4.3</b> Gestion des événements détecter</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#réponse-automatisée-à-un-incident"><i class="fa fa-check"></i><b>5.5</b> Réponse automatisée à un incident</a>
+<ul>
+<li class="chapter" data-level="5.5.1" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#linvestigation"><i class="fa fa-check"></i><b>5.5.1</b> L’investigation</a></li>
+<li class="chapter" data-level="5.5.2" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#latténuation"><i class="fa fa-check"></i><b>5.5.2</b> L’atténuation</a></li>
+<li class="chapter" data-level="5.5.3" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#automatisation-contextuelle"><i class="fa fa-check"></i><b>5.5.3</b> Automatisation contextuelle</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="mise-en-place-des-pratiques-au-sein-de-shadow.html"><a href="mise-en-place-des-pratiques-au-sein-de-shadow.html"><i class="fa fa-check"></i><b>6</b> Mise en place des pratiques au sein de Shadow</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="mise-en-place-des-pratiques-au-sein-de-shadow.html"><a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#shift-left-retro-planning"><i class="fa fa-check"></i><b>6.1</b> Shift Left Retro Planning</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="mise-en-place-des-pratiques-au-sein-de-shadow.html"><a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#devops-chez-shadow"><i class="fa fa-check"></i><b>6.1.1</b> DevOps chez Shadow</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="mise-en-place-des-pratiques-au-sein-de-shadow.html"><a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#pratiques-devsecops-chez-shadow"><i class="fa fa-check"></i><b>6.2</b> Pratiques DevSecOps chez Shadow</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="mise-en-place-des-pratiques-au-sein-de-shadow.html"><a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#programme-de-sensibilisation"><i class="fa fa-check"></i><b>6.2.1</b> Programme de sensibilisation</a></li>
+<li class="chapter" data-level="6.2.2" data-path="mise-en-place-des-pratiques-au-sein-de-shadow.html"><a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#détection-de-secrets"><i class="fa fa-check"></i><b>6.2.2</b> Détection de secrets</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="mise-en-place-des-pratiques-au-sein-de-shadow.html"><a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#automatisation-des-processus-de-détection-et-de-réponse-chez-shadow"><i class="fa fa-check"></i><b>6.3</b> Automatisation des processus de détection et de réponse chez Shadow</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="mise-en-place-des-pratiques-au-sein-de-shadow.html"><a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#détection"><i class="fa fa-check"></i><b>6.3.1</b> Détection</a></li>
+<li class="chapter" data-level="6.3.2" data-path="mise-en-place-des-pratiques-au-sein-de-shadow.html"><a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#réponse"><i class="fa fa-check"></i><b>6.3.2</b> Réponse</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="mise-en-place-des-pratiques-au-sein-de-shadow.html"><a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#amélioration-continue-et-prochaines-étapes"><i class="fa fa-check"></i><b>6.4</b> Amélioration continue et prochaines étapes</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>7</b> Conclusion</a></li>
+<li class="chapter" data-level="8" data-path="bibliographie.html"><a href="bibliographie.html"><i class="fa fa-check"></i><b>8</b> Bibliographie</a></li>
+<li class="chapter" data-level="9" data-path="annexes.html"><a href="annexes.html"><i class="fa fa-check"></i><b>9</b> Annexes</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="annexes.html"><a href="annexes.html#le-cycle-de-développement-sécurisé-1"><i class="fa fa-check"></i><b>9.1</b> Le cycle de développement sécurisé</a></li>
+<li class="chapter" data-level="9.2" data-path="annexes.html"><a href="annexes.html#fonctionnalités-dune-solution-de-sensibilisation-à-la-sécurité"><i class="fa fa-check"></i><b>9.2</b> Fonctionnalités d’une solution de sensibilisation à la sécurité</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Automatisation des processus de sécurité</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="etat-de-lart-de-lautomatisation-des-processus-de-sécurité" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">Chapitre 5</span> Etat de l'art de l'automatisation des processus de sécurité<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#etat-de-lart-de-lautomatisation-des-processus-de-sécurité" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="contexte-sur-lautomatisation-des-processus-de-sécurité" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Contexte sur l’automatisation des processus de sécurité<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#contexte-sur-lautomatisation-des-processus-de-sécurité" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="la-sécurité-informatique" class="section level3 hasAnchor" number="5.1.1">
+<h3><span class="header-section-number">5.1.1</span> La sécurité informatique<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#la-sécurité-informatique" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Pour contextualiser notre sujet, revenons aux origines et définissons la
+sécurité informatique.</p>
+<p>L'objectif de l'informatique est la gestion automatique de
+l'information et la sécurité informatique implique la sécurité de
+l'information c'est-à-dire le maintien de la confidentialité,
+intégrité et la disponibilité de ces informations. Ces trois points sont
+les piliers de la sécurité informatique. Le principe de confidentialité
+stipule que l’information ne doit être accessible qu’aux personnes
+autorisées, l’intégrité est la garantie que l’information ne soit pas
+corrompue, dégradée ou modifiée et la disponibilité est l’assurance que
+l’information soit accessible aux personnes autorisées au moment où
+elles en ont besoin.</p>
+<p>La sécurité de l’information n’est pas figée, elle est plutôt le
+résultat d’un processus d’amélioration continue, c’est-à-dire qui évolue
+à travers différentes phases et se perfectionne tout le long. Il s’agit
+d’un voyage et pas une destination. Bien qu’il y ait de nombreuses
+étapes dans ce voyage nous pouvons néanmoins les regrouper dans trois
+grandes phases : la prévention, la détection et la réponse (incluant la
+remédiation) (LaPiedra, 2002).</p>
+<div id="la-prévention" class="section level4 hasAnchor" number="5.1.1.1">
+<h4><span class="header-section-number">5.1.1.1</span> La prévention<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#la-prévention" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>La prévention consiste à se préparer en amont pour se prévenir de futurs
+incidents. Notre objectif est de protéger l’information de toutes
+dégradations, altération ou accès non autorisé. Pour cela la phase de
+prévention implique :</p>
+<ul>
+<li><p>La définition de politiques de sécurité : savoir ce qui doit être
+protégé en décrivant des règles claires, concises et précises.</p></li>
+<li><p>La mise en place d’un programme de sensibilisation à la sécurité de
+l’information pour éduquer toute l’équipe aux bonnes pratiques de
+sécurité et aux risques que court l’organisation</p></li>
+<li><p>L’implémentation des contrôles d’accès : restreindre l’accès et
+n’autoriser que les permissions nécessaires à la fonction de
+l’utilisateur. Identifier correctement les principes
+d’identification, authentification et autorisation dans chaque
+processus d’accès.</p></li>
+</ul>
+</div>
+<div id="la-détection" class="section level4 hasAnchor" number="5.1.1.2">
+<h4><span class="header-section-number">5.1.1.2</span> La détection<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#la-détection" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Se protéger est idéal mais détecter est indispensable. Tout système
+d’information est vulnérable et sujet à compromission. Keith Alexander,
+général de la United States Army et directeur de la National Security
+Agency (NSA) affirme durant la U.S. Chamber of Commerce Cybersecurity
+Summit en 2012 :</p>
+<blockquote>
+<p>Either you know you’ve been hacked, or you’ve been hacked and you
+don’t know you’ve been hacked</p>
+</blockquote>
+<p>que nous pouvons traduire par : soit vous savez que vous avez été
+attaqué soit vous avez été attaqué mais vous ne le savez pas encore. En
+effet, peu importe le niveau de protection d’un système d’information,
+ce n’est qu’une question de temps avant qu’il ne soit compromis par un
+acteur ayant assez de compétences et de motivation. D’où l’importance
+d’un système de détection de d’intrusion et de compromission (IDS). Le
+facteur le plus crucial dans une stratégie de détection est le temps
+moyen entre l'infection et la détection ajoutée à la précision de la
+notification en cas de compromission : une détection plus rapide et une
+notification plus précise amélioreront l'efficacité du processus
+d'investigation et de réponse en cas d'incident.</p>
+</div>
+<div id="la-réponse" class="section level4 hasAnchor" number="5.1.1.3">
+<h4><span class="header-section-number">5.1.1.3</span> La réponse<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#la-réponse" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="assets/img/sans-nist-ir-annotated.jpeg" /></p>
+<p>La réponse consiste à réagir face à
+l’annonce d’un nouvel incident ou d’une compromission. La phase de
+réponse donne toute sa valeur à une détection de qualité. Néanmoins, une
+bonne réponse ne s’improvise pas. Le stress que nous ressentons lors
+d’une attaque ne permet pas de prendre de bonnes décisions. Il existe
+des méthodologies de réponse à incident permettant d’adapter son plan de
+réponse à son métier et à l’incident subit. Celui du NIST (National
+Institute of Standards and Technology) et du SANS se distingue dans le
+schéma suivant.</p>
+<p>Nous commençons toujours par l’étape de préparation qui se déroule en
+général avant l’arrivée de l’incident. La détection arrive ensuite, nous
+devons identifier et analyser le type d’attaque que nous subissons, son
+origine et idéalement l’auteur de l’attaque. Après cela le confinement
+vise à réduire l’impact de l’incident, l’éradication à supprimer la
+menace du système d’information et la reprise à remettre le système en
+condition opérationnelle. Enfin la dernière étape consiste toujours à
+faire une revue de la gestion de l’incident et sert à améliorer le
+processus de réponse en lui-même.</p>
+<p>Une bonne réponse à incident nécessite un processus rapide qui aboutit à
+une remédiation dans un court laps de temps. Au-delà d’une succession
+optimale des étapes susmentionnées, nous devons noter que la vitesse de
+ce processus passe par une remontée efficace des informations nécessaire
+à l’équipe lors de la détection même l’incident. Le SANS précise que</p>
+<blockquote>
+<p>The process of detecting malicious or accidental misuse of resources
+is much more than sounding an alarm. Also, responding to an incident
+is much more than just showing up. An organization to be successful
+must know what to detect and once alerted know how to effectively
+coordinate resources for a response.</p>
+</blockquote>
+<p>Pour poursuivre, une bonne détection est de même liée à une préparation
+et une prévention correcte. Là se trouvent les principaux maux de la
+sécurité informatique :</p>
+<ul>
+<li><p>Ils prennent du temps</p></li>
+<li><p>Ils nécessitent beaucoup de bande passante (de charge de travail, de
+personnes qualifiées)</p></li>
+<li><p>Ils sont coûteux en ressources et en argent</p></li>
+</ul>
+<p>Cela décourage certaines organisations à entamer le voyage dont nous
+parlons. Comment donc faire en sorte de corriger ces barrières tout en
+facilitant l’adoption des pratiques de sécurité ? Chez Shadow nous avons
+un programme de sécurité établi par Florent notre responsable sécurité.
+Après avoir fait l’état des lieux et défini les politiques nécessaires
+et les actions à prendre pour commencer notre voyage, ce dernier inclut
+une phase d’automatisation des processus de sécurité au sein du cycle de
+développement mais également dans les tâches quotidiennes de l’équipe en
+charge de la sécurité.</p>
+</div>
+</div>
+<div id="les-processus-de-sécurité-automatisées" class="section level3 hasAnchor" number="5.1.2">
+<h3><span class="header-section-number">5.1.2</span> Les processus de sécurité automatisées<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#les-processus-de-sécurité-automatisées" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Dans un monde idéal, nous n'aurions pas à répondre à des incidents ou,
+du moins, nous n'aurions qu'à traiter des incidents dignes de notre
+attention. L'une des solutions pour parvenir à ce monde idéal serait
+d'automatiser les processus répétitifs.</p>
+<p>Le docteur Brian Carrier définit l’automatisation en disant :</p>
+<blockquote>
+<p>Automation is when the computer does the next step without human
+intervention<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+</blockquote>
+<p>De ce fait l’automatisation des processus de sécurité permettrait :</p>
+<ul>
+<li><p>Une réduction des tâches manuelles de bas niveau : pour libérer du
+temps à l'équipe sécurité et lui permettre de se concentrer sur les
+tâches nécessitant plus d'attention.</p></li>
+<li><p>Une réponse rapide aux incidents : pour réduire le MTTD (Mean Time
+To Detect — temps moyen de détection) et le MTTR (Mean Time To
+Repair — temps moyen de réparation) comme expliqué plus haut.</p></li>
+<li><p>Une standardisation des processus : car une plateforme automatisée
+suivra toujours les règles que nous lui donnons, éliminant ainsi les
+erreurs d'opérations manuelles et apportant de la cohérence.</p></li>
+<li><p>Un gain de productivité général pour l'équipe.</p></li>
+</ul>
+<p>Cependant, l'automatisation n'est pas l'unique option. Les autres
+solutions consistent à optimiser la réalisation des processus en
+améliorant ceux qui en dépendent. Par exemple, nous pouvons limiter le
+temps de réponse à un incident en maximisant les indicateurs que nous
+remontent nos systèmes de détection d'intrusion (IDS). Nous pouvons
+également élever le niveau de notre détection en connaissant
+profondément notre système d'information. En effet, une connaissance
+parfaite de son SI et de ses services permet de configurer finement ses
+outils de détection et de remonter les événements. En continuant avec
+cette idée, on éviterait le nombre d'événements remontés en prévenant
+le nombre de vulnérabilités dans nos applications, réduisant ainsi notre
+surface d'attaque et, par transitivité, le risque auquel nous sommes
+soumis. D'où l'importance de la phase de prévention.</p>
+<p>Une grosse partie de la prévention est de faire en sorte que les
+applications et logiciels que nous sortons soient sécurisés, nous
+arrivons donc à la sécurisation du cycle de développement.</p>
+</div>
+<div id="le-cycle-de-développement-sécurisé" class="section level3 hasAnchor" number="5.1.3">
+<h3><span class="header-section-number">5.1.3</span> Le cycle de développement sécurisé<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#le-cycle-de-développement-sécurisé" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Tenant ses origines des années 1960, la sécurité dans le SDLC —
+Software Development Lifecycle — et toutes les méthodologies s’en
+inspirant, quand elle est incluse, se positionne comme un jalon la
+gestion de projet entre certaines étapes du SDLC. Une porte à franchir
+pour passer à l’étape suivante. Nous avons généralement dans les équipes
+soucieuses de la sécurité de leur produit</p>
+<ul>
+<li><p>La revue des spécifications et de la conception du produit : après
+l’étape d’identification</p></li>
+<li><p>La revue de l’architecture : après l’étape de conception</p></li>
+<li><p>La revue du code : après l’étape de création ou développement</p></li>
+<li><p>Les tests de sécurité : après l’étape des tests.</p></li>
+</ul>
+<p>Laura Bell précise dans son livre <em>Agile Application Security</em> que
+l’idée derrière ces jalons soit de réaliser des livrables en lot car</p>
+<blockquote>
+<p>It is predicated on the old rule that the earlier a defect is caught,
+the cheaper it is to fix; therefore we need to do a security review as
+early as possible to catch security defects before they get too far.
+(Bell, Brunton-Spall, Smith, &amp; Bird, 2017, p. 79)</p>
+</blockquote>
+<p>Sauf que notre problématique persiste. Effectivement, les processus et
+pratiques de sécurité telles que nous les connaissons ont été conçues
+pour une gestion de projet en cascade où les besoins sont décidés bien
+avant et pas pour des petites équipes évoluant rapidement et de manière
+itérative.</p>
+<p>En optant pour une approche Agile, la solution ne consisterait pas à
+résoudre tous les problèmes de sécurité avant la mise en production,
+mais plutôt à se concentrer sur la réduction du coût de correction, en
+rendant les futurs changements sans risque et plus facilement
+réalisables.</p>
+<blockquote>
+<p>We want to reach a fine balance between finding and fixing (or better,
+preventing) security problems up front where it makes sense to do so,
+and making sure that we can fix them quickly and cheaply later if
+something gets by. (Bell, Brunton-Spall, Smith, &amp; Bird, 2017, p. 79)</p>
+</blockquote>
+<p>La première approche pour répondre à cela est l’apparition du principe
+<em>Shift Left</em><a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a><em>,</em> c’est-à-dire inclure des tests de sécurité à chaque
+étape du SDLC. Nous obtenons ce dont les experts appellent le SSDLC —
+Secure Development Lifecycle — ou SDL pour faire court. (Voir annexe
+1)</p>
+<p>Une approche plus récente avec la montée en charge des pratiques DevOps
+et l’augmentation exponentielle des menaces de sécurité, permet d’aller
+encore plus loin et favorise les entreprises à se préparer et à
+actualiser fréquemment l’ensemble de ses processus de sécurité de la
+prévention à la réponse : le modèle DevSecOps avec un accent particulier
+sur l’automatisation.</p>
+<p>Dans le parcours de la sécurité chez Shadow, j’ai eu l’honneur d’avoir
+la responsabilité de mettre en place certaines de ces pratiques.
+Cependant, maintenant que nous savons pourquoi l’automatisation peut
+être un acteur positif à l’évolution des processus de sécurité,
+découvrons ce qui se fait de mieux avant d’aborder concrètement les
+actions menées au sein de notre organisation.</p>
+</div>
+</div>
+<div id="introduction-à-lautomatisation" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Introduction à l’automatisation<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#introduction-à-lautomatisation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Avant de parler d’automatisation et de pratiques DevSecOps, nous devons
+savoir <em>Quoi</em> automatiser et <em>Quand</em> automatiser. Mentionné plus tôt, le
+Dr. Brian Carrier défini trois niveaux d’automatisation pour compléter
+sa définition</p>
+<ol style="list-style-type: decimal">
+<li><p>Manuelle : c’est-à-dire aucune présence de quelconque
+automatisation.</p></li>
+<li><p>Partielle : une automatisation présente mais ayant besoin de
+quelques interactions humaines.</p></li>
+<li><p>Totale : définissant un processus totalement automatisé.</p></li>
+</ol>
+<p>Quand nous souhaitons automatiser, nous devons choisir le niveau
+d'automatisation selon que :</p>
+<ul>
+<li><p>le <strong>bénéfice</strong> qu’apportera la réalisation automatique de la
+prochaine étape du processus soit assez élevé</p></li>
+<li><p>le <strong>coût</strong> humain, logiciel et matériel de la mise en place du
+processus automatique soit abordable dans notre contexte</p></li>
+<li><p>la <strong>probabilité</strong> qu’une erreur survienne et son <strong>impact</strong>
+extérieur à son contexte soit acceptable</p></li>
+</ul>
+<p>Sachant que plus une automatisation devient complexe, plus le besoin en
+ressources matérielles et en maintenance se fait grand, nous devons
+évaluer ces paramètres non seulement au début de la phase de réflexion
+de la mise en place de notre processus automatisé mais aussi à chaque
+fois que nous souhaitons faire évoluer notre niveau d’automatisation.</p>
+<p>En ce qui concerne le cycle de développement notre objectif en faisant
+du <em>Shift Left</em> est d’accompagner le développeur et de lui faire un
+retour <em>continu</em> sur son code. Voyant ce que nous apporte le DevSecOps
+sur ce chemin.</p>
+</div>
+<div id="prévention-et-devsecops" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> Prévention et DevSecOps<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#prévention-et-devsecops" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Plus qu’une recette miracle ou un terme new age, le DevSecOps est une
+approche et une philosophie qui comme les principes Agiles favorise la
+collaboration entre les équipes dans l’objectif de détecter au plus tôt
+les problèmes de sécurité et les vulnérabilités diverses. L’OWASP dit
+dans le projet <strong>OWASP DevSecOps Guideline</strong></p>
+<blockquote>
+<p>The Ideal goal is “detect security issues (by design or application
+vulnerability) as fast as possible.”<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p>
+</blockquote>
+<p>On peut voir le DevSecOps comme une aide et un ensemble de bonnes
+pratiques dans la mise en place d’un cycle de développement sécurisé.</p>
+<div id="culture-devsecops" class="section level3 hasAnchor" number="5.3.1">
+<h3><span class="header-section-number">5.3.1</span> Culture DevSecOps<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#culture-devsecops" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Le terme DevSecOps suppose l’engagement des équipes développement,
+sécurité et opérationnelle. Sauf que cette approche va au-delà de la
+définition même de ces équipes et implique tous les métiers agissant sur
+le cycle de développement pour les rendre responsables de la sécurité :
+du chef de projet aux développeurs en passant par les designers, les
+architectes, etc. De plus Shannon Lietz — fondateur de la DevSecOps
+Foundation dit</p>
+<blockquote>
+<p>The purpose and intent of DevSecOps is to build on the mindset that
+“everyone is responsible for security” with the goal of safely
+distributing security decisions at speed and scale to those who hold
+the highest level of context without sacrificing the safety
+required.”<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></p>
+</blockquote>
+<p>Pour cela, nous devons sensibiliser nos équipes à la culture DevSecOps
+et mettre en place des outils pour parvenir à une stratégie de Shift
+Left performante. L'étape préalable consiste à comprendre l'importance
+d'un esprit de collaboration, ce qui constitue une base solide pour le
+partage des bonnes pratiques de sécurité au sein des équipes. Cela
+facilite également le travail des équipes de sécurité dans la
+compréhension de leurs politiques par les collaborateurs. D’où la
+nécessité d’un programme de sensibilisation à la sécurité informatique.
+Notamment la compréhension des vulnérabilités venant des standards comme
+le OWASP Top 10 ou le CWE top 25.</p>
+</div>
+<div id="comprendre-son-besoin-en-sécurité" class="section level3 hasAnchor" number="5.3.2">
+<h3><span class="header-section-number">5.3.2</span> Comprendre son besoin en sécurité<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#comprendre-son-besoin-en-sécurité" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="assets/img/Hierarchy%20of%20software%20security%20needs.png" /></p>
+<p>Avant de se lancer dans un programme de
+mise en place de pratiques DevSecOps une organisation doit prendre en
+compte son niveau de maturité pour pouvoir formaliser son besoin de
+sécurité et pouvoir le traduire en tant que processus automatisé. Un
+article de Shannon Lietz présente une pyramide pour hiérarchiser les
+besoins en sécurité d’un logiciel à la manière de la pyramide de
+Maslow.<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a></p>
+<p>Hiérarchiser ses besoins permet de mieux répartir nos efforts dans la
+mise en place de politique de sécurité. Nous l’avons dit, la sécurité
+informatique n’est pas figée, ainsi nos politiques doivent être faites
+selon la culture, les objectifs et les politiques organisationnelles de
+l’entreprise. De la même manière notre approche vers l’automatisation de
+nos processus de sécurité ne doit pas être figée à un unique standard.
+Nous devons prendre en compte les contraintes de chaque outil avant de
+faire notre choix, s’assurer que toute l’équipe adopte un schéma de
+pensé aligné avec l’idée de ne pas faire de choix qui sembleraient
+couvrir tous les besoins existant mais plutôt s’orienter vers des
+solutions qui répondent à un besoin particulier. Par exemple choisir un
+outil pour un langage de programmation spécifique quand cela est
+pertinent plutôt qu’un autre promettant de réaliser un traitement sur
+tous types de langage mais sans réelle efficacité.</p>
+<p>Il existe des outils qui nous aident dans l’évaluation de notre niveau
+de maturité et nous permettent de savoir comment hiérarchiser nos
+besoins.</p>
+<ul>
+<li><p>L’OWASP Software Assurance Maturity Model (SAMM) par exemple est un
+cadre qui a pour objectif d’accompagner les organisations à formuler
+et à mettre en place une stratégie de sécurité logicielle
+parfaitement adaptée aux risques spécifiques auxquels l’organisation
+est confrontée.</p></li>
+<li><p>L’OWASP DevSecOps Maturity Model (DMM) est l’équivalent du SAMM pour
+les pratiques DevSecOps, ce cadre évalue le niveau de mise en place
+de pratiques DevSecOps au sein de l’organisation, nous aidant à
+hiérarchiser nos besoins dans notre approche de sécurisation de
+notre cycle de développement.</p></li>
+</ul>
+</div>
+<div id="conception-sécurisé-et-industrialisation-des-tests" class="section level3 hasAnchor" number="5.3.3">
+<h3><span class="header-section-number">5.3.3</span> Conception sécurisé et industrialisation des tests<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#conception-sécurisé-et-industrialisation-des-tests" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Une fois qu’une culture de collaboration est établie et que nous savons
+où orienter nos efforts, nous devons accompagner l’équipe de
+développement dans la réalisation de sa tâche tout en l’aidant à livrer
+une application sécurisée. Laura Bell dit dans Agile Application
+Security</p>
+<blockquote>
+<p>Security teams that try to reduce risk by minimizing change, rather
+than supporting development teams to realize their ideas in a secure
+way, are doomed to be increasingly irrelevant in an Agile world, and
+will therefore be bypassed.</p>
+<p><span class="math display">\[...\]</span> Security professionals have to learn to accept change, to work
+faster and more iteratively, and be able to think about security
+risks, and how to manage risks, in incremental terms. And most
+important<strong>, security needs to become an enabler, instead of a
+blocker.</strong> (Bell, Brunton-Spall, Smith, &amp; Bird, 2017, p. 76)</p>
+</blockquote>
+<p>Dans cette direction, qui s’aligne avec le fait de prévenir la
+découverte de vulnérabilités au plus tôt, notre rôle revient à se
+retrouver dans le quotidien de l’équipe de développement et au sein de
+ses outils. Cela se traduit notamment dans la mise en place</p>
+<ul>
+<li><p>de revue de code sécurisé</p></li>
+<li><p>d’un programme de Security Champion, qui est collaborateur de
+l’équipe ayant un rôle de développeur ou d’opérationnelle en charge
+de partager une culture de sécurité et de s’assurer du respect des
+politiques de sécurité lors des développements.</p></li>
+<li><p>de tests de sécurité directement dans les cycles d’intégration et de
+déploiement continu (CI/CD)</p></li>
+</ul>
+<p>Le modèle OWASP d’un cycle de livraison continu adapté aux tests de
+sécurité se présente grossièrement comme suite</p>
+<p><img src="assets/img/ci_cd.png" /></p>
+<p>Ces étapes consistent concrètement à :</p>
+<ol style="list-style-type: decimal">
+<li><p>Parcourir les dépôts git à la recherche d'identifiants ou de
+valeurs secrètes exposés publiquement.</p></li>
+<li><p>Analyser le code source de l'application ou du logiciel à déployer
+pour découvrir de potentielles vulnérabilités (Static Application
+Security Testing — SAST).</p></li>
+<li><p>Analyser l'ensemble des composants et librairies dont dépend le
+code source pour se prémunir des risques de sécurité liés à la
+compromission de ces derniers (Software Component Analysis — SCA).</p></li>
+<li><p>Réaliser des tests de sécurité sur l'application pendant qu'elle
+s'exécute, similaire à une activité de tests de pénétration en
+boîte noire. L'objectif est de retrouver des failles et des
+vulnérabilités donnant des accès non autorisés aux données (Dynamic
+Application Security Testing — DAST).</p></li>
+<li><p>Analyser le code destiné à la création dynamique de
+l'infrastructure pour éviter les erreurs liées à une mauvaise
+configuration ou une implémentation inadéquate (Infrastructure as
+Code Scanning — IaC).</p></li>
+<li><p>Analyser <strong>l'infrastructure</strong> en elle-même pour vérifier
+l'exposition et la surface d'attaque de l'environnement.</p></li>
+<li><p>Tester l'application des politiques définies et la conformité aux
+différents standards liés à notre industrie (Compliance Check).</p></li>
+</ol>
+<p>Ces dernières se réalisent bien évidemment de manière automatique pour
+apporter un retour continu aux développeurs dans la correction des
+vulnérabilités <strong>remontées</strong>. Mais l'automatisation ne s'arrête pas
+là. Nous verrons dans la suite que nous pouvons encore faire évoluer
+l'automatisation de certains de nos processus, mais également quels
+outils nous permettront d'implémenter ces actions, notamment dans le
+contexte de Shadow.</p>
+<p>Le guide OWASP DevSecOps Guideline<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a> détaille chacune de ces étapes et
+apporte des clés et des outils en <strong>source</strong> ouverte pour nous aider
+dans notre démarche.</p>
+</div>
+<div id="surveiller-continuellement" class="section level3 hasAnchor" number="5.3.4">
+<h3><span class="header-section-number">5.3.4</span> Surveiller continuellement<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#surveiller-continuellement" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>De nos jours, les attaquants ne cessent de renouveler leurs techniques
+d'attaque en profitant du principe de confiance établi entre les
+environnements et les composants de notre système d'information et ceux
+de nos organisations partenaires. Certaines méthodes non
+conventionnelles prolifèrent, notamment en prenant avantage des services
+en SaaS et en Cloud, car l'attaquant peut facilement s'y introduire et
+se servir de la base de confiance que nous avons en ces services pour
+pénétrer au sein de notre environnement. C'est le principe d'une
+attaque en <em>Supply Chain</em>. Ce genre d'attaque est difficile à
+reconnaître et donne aux attaquants un bon moyen de contourner les
+outils de détection mis en place. De plus, nos environnements ne sont
+pas encore prêts pour les détecter. De la même manière que les méthodes
+d'attaque évoluent, les techniques de détection doivent évoluer. En
+effet, de la détection d'intrusion réseau et machine que nous
+connaissons, nous devons tendre vers une détection proche de la logique
+de l'application et du logiciel en cours de développement. Shannon
+Lietz dit :</p>
+<blockquote>
+<p>The natural evolution of security is from network to host to software.</p>
+</blockquote>
+<p>C'est-à-dire étudier et comprendre comment notre produit fonctionne et
+est utilisé pour faire remonter les comportements déviants. Cela
+implique un développement qui prend en compte une récolte de données
+importante et pertinente pour une investigation.</p>
+<p>Surveiller continuellement, c'est instrumentaliser l'analyse de ces
+données pour avoir une vision <strong>claire</strong> du comportement de notre
+produit en permanence. Cela nécessite un investissement de temps et
+d'efforts pour comprendre quels sont ces comportements déviants à
+l'utilisation normale de notre application dans un premier temps, puis
+comment implémenter les logiques de détection de ces comportements au
+sein de nos outils. Par exemple, quand nous avons une application
+d'administration conçue pour être utilisée entre 8 h et 17 h et qu'un
+utilisateur se connecte à 00 h, nous devons journaliser cet événement de
+manière particulière pour permettre aux outils de sécurité de lancer une
+alerte et déclencher une intervention. Pour aller plus loin dans le
+processus d'automatisation, dans certains cas, l'application peut être
+conçue et développée pour s'auto-remédier face à ce type de
+comportement pré-identifié.</p>
+<p>En somme, ces pratiques issues de l'approche DevSecOps nous permettent
+de <em>Shift Left</em>, c'est-à-dire détecter les causes d'un manque de
+sécurité au plus tôt dans le cycle de développement. Comme dit le
+manifeste DevSecOps :</p>
+<blockquote>
+<p>We will not wait for our organizations to fall victim to mistakes and
+attackers. We will not settle for finding what is already known;
+instead, we will look for anomalies yet to be detected.</p>
+</blockquote>
+<p>En réalisant tout cela dans notre phase de prévention de la menace, nous
+sommes déjà à l'abri de 99% des attaques courantes. Toutefois, comme
+nous l'avons déjà abordé, sans détection efficace, nous restons des
+cibles faciles pour des techniques d'attaque nouvelle génération.
+Voyons donc comment, en mettant en avant l'automatisation de nos
+processus, nous pouvons tendre vers l'optimisation de notre système de
+détection.</p>
+</div>
+</div>
+<div id="détection-de-nouvelles-menaces" class="section level2 hasAnchor" number="5.4">
+<h2><span class="header-section-number">5.4</span> Détection de nouvelles menaces<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#détection-de-nouvelles-menaces" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>La détection est une phase du cycle de sécurité d'une organisation dont
+l'objectif est d'identifier les menaces présentes au sein du système
+d'information ou du réseau de cette dernière. Ces menaces peuvent être
+présentes sous la forme de logiciels malveillants, d'une première prise
+de contact comme un phishing ou d'un premier accès au réseau, comme une
+analyse de ports ouverts. Ce processus devrait également être automatisé
+pour qu'il soit pleinement utile à l'équipe. En effet, beaucoup
+d'équipes réalisent encore aujourd'hui des investigations manuelles
+pour faire de la détection de bas niveau, ce qui est malheureusement
+sujet à des erreurs humaines et à un risque de non-détection de
+certaines menaces.</p>
+<p>Automatiser la détection de menaces implique d'avoir un bon niveau de
+surveillance des événements sur les terminaux de notre système
+informatique. Cela va de pair avec une bonne stratégie de notification
+et réduction du temps à la détection de la menace. James LaPiedra dit
+dans un document de la certification GIAC du SANS :</p>
+<blockquote>
+<p>defense in layers strategy should be deployed so when each layer
+fails, it fails safely to a known state and sounds an alarm (LaPiedra,
+2002)</p>
+</blockquote>
+<p>Cela devient encore plus vrai face à la montée croissante de nouvelles
+sortes d'attaques devenant de plus en plus complexes à identifier.
+D'un autre côté, les anciennes sont facilement identifiables grâce à
+leur signature particulière et leur schéma déjà bien connu. Dans ce
+contexte, nous avons tout à y gagner à faire confiance à des outils qui
+se chargent de ces tâches à notre place pour que nous puissions nous
+concentrer sur la levée de suspicions sur une menace ou
+l'identification de menaces plus critiques.</p>
+<p>Beaucoup de solutions existent aujourd'hui pour nous accompagner dans
+cette phase, chacune à différents niveaux du système d'information.</p>
+<div id="détection-au-sein-du-réseau" class="section level3 hasAnchor" number="5.4.1">
+<h3><span class="header-section-number">5.4.1</span> Détection au sein du réseau<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#détection-au-sein-du-réseau" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>L'analyse du trafic réseau ou <em>Network Traffic Analysis</em> (NTA) est une
+pratique cruciale dans la sécurité d’un système informatique, visant à
+surveiller et à analyser le trafic réseau pour détecter les anomalies,
+les menaces et les comportements malveillants. En combinant diverses
+technologies, elle permet une détection et une aide à la réponse
+proactives aux incidents de sécurité.</p>
+<p>Nous avons notamment</p>
+<div id="les-ids" class="section level4 hasAnchor" number="5.4.1.1">
+<h4><span class="header-section-number">5.4.1.1</span> Les IDS<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#les-ids" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Les systèmes de détection d’intrusions (IDS), essentiels pour l'analyse
+du trafic réseau. Surveille le réseau et identifie les activités
+suspectes ou malveillantes. Comme Snort, un IDS open source très
+populaire qui analyse le trafic en temps réel et détecte diverses
+attaques et intrusions.</p>
+<p>Chez Shadow nous avons pu mettre en place CrowdSec une solution de
+sécurité qui analyse les logs applicatifs pour détecter et prévenir les
+intrusions. Ne se limitant pas qu’à cette tâche, je la présenterai plus
+loin dans le contexte de la mise en place de détection de la menace au
+sein de Shadow.</p>
+</div>
+<div id="la-suite-elastic-stack-elk" class="section level4 hasAnchor" number="5.4.1.2">
+<h4><span class="header-section-number">5.4.1.2</span> La suite Elastic Stack (ELK)<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#la-suite-elastic-stack-elk" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Elastic Stack, également connu sous le nom de ELK (Elasticsearch,
+Logstash, Kibana), est une suite d'outils open source pour la gestion
+et l'analyse des données :</p>
+<ul>
+<li><p><strong>Collecte et ingestion de données (Logstash)</strong> : Agrège et traite
+les données de diverses sources.</p></li>
+<li><p><strong>Recherche et analyse (Elasticsearch)</strong> : Fournit des capacités de
+recherche et d'analyse performantes.</p></li>
+<li><p><strong>Visualisation des données (Kibana)</strong> : Permet la création de
+tableaux de bord interactifs pour visualiser et explorer les données
+de sécurité.</p></li>
+</ul>
+<p>Le choix et l'intégration de ces technologies NTA permettent de
+renforcer la visibilité sur le réseau, d'améliorer la détection des
+menaces et de réagir rapidement aux incidents de sécurité, contribuant
+ainsi à une posture de sécurité globale plus robuste et réactive.</p>
+</div>
+</div>
+<div id="détection-au-sein-des-terminaux-du-système-informatique" class="section level3 hasAnchor" number="5.4.2">
+<h3><span class="header-section-number">5.4.2</span> Détection au sein des terminaux du système informatique<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#détection-au-sein-des-terminaux-du-système-informatique" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Pour détecter les menaces sur nos terminaux de manière automatique nous
+avons les technologies de Détection et Réponse sur les Endpoints
+(Endpoint Detection and Response — EDR) et Détection et Réponse
+Étendues (EXtended Detection and Response — XDR). Elles sont cruciales
+pour la surveillance et la sécurisation des points d'accès réseau, des
+serveurs et des postes de travails de nos collaborateurs. Elles
+permettent de détecter, d'analyser et de répondre aux menaces de
+manière proactive, assurant une protection renforcée des infrastructures
+informatiques.</p>
+<p>L'EDR se concentre sur la détection et la réponse aux menaces
+directement sur les endpoints (postes de travail, serveurs, appareils
+mobiles), utilisant des techniques avancées pour identifier les
+comportements suspects et les activités malveillantes mais également
+fournir des fonctionnalités adéquates pour enquêter sur les incidents de
+sécurité et prendre des mesures correctives.</p>
+<ul>
+<li>OpenEDR par exemple est une solution open source qui offre une
+visibilité complète sur les activités des endpoints, permettant de
+détecter et de répondre aux menaces en temps réel. OpenEDR est conçu
+pour être flexible et extensible, ce qui le rend adapté à une
+variété d'environnements de sécurité. Non seulement il détecte les
+menaces, mais il permet également aux administrateurs de comprendre
+l'ampleur des incidents et de mettre en place des réponses
+efficaces pour limiter les impacts.</li>
+</ul>
+<p>L'XDR va au-delà de l'EDR en intégrant des données provenant de
+plusieurs sources de sécurité pour offrir une visibilité et une
+protection plus globales. Il combine des données de sécurité provenant
+des endpoints, des réseaux, des serveurs et des applications pour une
+vue holistique des menaces. Il permet une analyse centralisée des
+menaces et une réponse coordonnée à travers l'ensemble de
+l'infrastructure.</p>
+<ul>
+<li>Nous pouvons citer Wazuh comme plateforme open source qui offre des
+capacités de détection et de réponse étendues. Wazuh intègre des
+fonctionnalités de surveillance des fichiers, de gestion des
+configurations, de détection des anomalies et de réponse aux
+incidents, couvrant ainsi un large spectre de sources de données de
+sécurité.</li>
+</ul>
+<p>L'utilisation de solutions EDR et XDR comme OpenEDR et Wazuh permet aux
+organisations de renforcer leur posture de sécurité en offrant une
+visibilité accrue et une capacité de réponse améliorée aux menaces. Ces
+technologies sont essentielles pour détecter et neutraliser les
+cyberattaques avant qu'elles ne causent des dommages significatifs.
+Chez Shadow nous avons fait le choix d’intégrer Wazuh à la gamme de nos
+outils de détection pour couvrir tous nos serveurs de données et
+machines virtualisées. Un sujet que nous développerons plus loin dans ce
+document.</p>
+</div>
+<div id="gestion-des-événements-détecter" class="section level3 hasAnchor" number="5.4.3">
+<h3><span class="header-section-number">5.4.3</span> Gestion des événements détecter<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#gestion-des-événements-détecter" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Bien que ces solutions de détection soient suffisantes ; la gestion des
+informations et des événements de sécurité ou Security Information and
+Event Management (SIEM) est une approche et une solution essentielle à
+avoir en matière de détection, elle combine la gestion des informations
+de sécurité (SIM) et la gestion des événements de sécurité (SEM). Elle
+permet une analyse en temps réel des alertes de sécurité, contribuant à
+la détection, la prévention et la réponse aux menaces et incidents de
+sécurité, tout en assurant la conformité réglementaire des
+organisations. Elle implique de récolter un grand nombre d’informations
+des différentes solutions intégrées et de les centraliser pour pouvoir
+les traiter proprement et faciliter le travail des analystes.</p>
+<p>Voici un aperçu de quelques solutions SIEM majeures et leurs
+caractéristiques distinctives.</p>
+<div id="ibm-qradar" class="section level4 hasAnchor" number="5.4.3.1">
+<h4><span class="header-section-number">5.4.3.1</span> IBM QRadar<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#ibm-qradar" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>IBM QRadar est une plateforme SIEM de premier plan qui se distingue par
+:</p>
+<ul>
+<li><p><strong>Détection avancée des menaces</strong> : Utilisation de l'apprentissage
+automatique et de l'analyse comportementale.</p></li>
+<li><p><strong>Réponse intégrée aux incidents</strong> : Capacités de réponse rapides et
+efficaces.</p></li>
+<li><p><strong>Scalabilité</strong> : Adaptée aux grandes entreprises.</p></li>
+<li><p><strong>Gestion de la conformité</strong> : Conformité avec des normes telles que
+le RGPD, HIPAA et PCI-DSS.</p></li>
+</ul>
+</div>
+<div id="splunk" class="section level4 hasAnchor" number="5.4.3.2">
+<h4><span class="header-section-number">5.4.3.2</span> SPLUNK<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#splunk" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Splunk est réputé pour sa gestion des grandes quantités de données
+générées par les machines. Ses caractéristiques incluent :</p>
+<ul>
+<li><p><strong>Surveillance en temps réel</strong> : Alertes instantanées sur les
+menaces.</p></li>
+<li><p><strong>Ingestion de données polyvalente</strong> : Adaptabilité à divers
+environnements.</p></li>
+<li><p><strong>Recherche et visualisation performantes</strong> : Capacités de recherche
+approfondies et visualisations intuitives.</p></li>
+<li><p><strong>Tableaux de bord personnalisables</strong> : Suivi des indicateurs de
+performance spécifiques.</p></li>
+</ul>
+</div>
+<div id="datadog-cloud-siem" class="section level4 hasAnchor" number="5.4.3.3">
+<h4><span class="header-section-number">5.4.3.3</span> Datadog Cloud SIEM<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#datadog-cloud-siem" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Datadog Cloud SIEM, une solution native du cloud, offre :</p>
+<ul>
+<li><p><strong>Architecture native du cloud</strong> : Déploiement facile et
+évolutivité.</p></li>
+<li><p><strong>Surveillance unifiée</strong> : Intégration avec les autres services de
+Datadog.</p></li>
+<li><p><strong>Détection automatisée des menaces</strong> : Algorithmes d'apprentissage
+automatique pour la détection proactive.</p></li>
+<li><p><strong>Gestion des incidents</strong> : Outils efficaces pour une réponse
+rapide.</p></li>
+</ul>
+<p>Avoir une approche de gestion des événements de sécurité avec une
+solution SIEM doit prendre en compte la taille de l'organisation, des
+exigences spécifiques en matière de sécurité, des impératifs de
+conformité et de l'infrastructure informatique existante. Cela permet
+de renforcer la posture de sécurité de l'organisation face aux menaces
+cybernétiques croissantes.</p>
+<p>James LaPierda dit sur la détection</p>
+<blockquote>
+<p>This is more of an art than a science. <span class="math display">\[...\]</span> (It) is much more than
+an alarm. Although it is an alarm, it’s an alarm with brains.</p>
+</blockquote>
+<p>Car une détection est d’autant plus efficace qu’elle donne les éléments
+nécessaires à une bonne investigation et accompagne ainsi la réponse à
+incident. Il est vrai qu’un pompier ne pas intervenir s’il ne connaît
+pas l’adresse de son incident. Toutefois notre détection peut être
+inefficace sans plan de réponse, nous ne devons pas attendre une alerte
+pour se préparer à y répondre. Il est donc temps d’étudier comme y
+parvenir tout en évaluant les possibilités d’automatisation de ces
+processus.</p>
+</div>
+</div>
+</div>
+<div id="réponse-automatisée-à-un-incident" class="section level2 hasAnchor" number="5.5">
+<h2><span class="header-section-number">5.5</span> Réponse automatisée à un incident<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#réponse-automatisée-à-un-incident" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><img src="assets/img/sans-nist-ir.jpeg" /></p>
+<p>En phase de réponse notre objectif est de comprendre ce qui s’est passé sur
+notre système d’information grâce aux précieuses données obtenues lors
+de la phase de détection dans le but de trouver l’attaquant, réparer les
+dégâts que nous aurions subis et minimiser l’impact de son activité sur
+notre métier. Nous l’avons vu plus haut, une réponse à incident de
+manière traditionnelle se déroule en différentes étapes selon la
+méthodologie du SANS ou du NIST.</p>
+<p>D’un point de vue technique, utile dans une philosophie
+d’automatisation, le Docteur Brian Carrier regroupe ces étapes en deux
+grands processus : l’investigation et l’atténuation ou <em>mitigation</em>.</p>
+<div id="linvestigation" class="section level3 hasAnchor" number="5.5.1">
+<h3><span class="header-section-number">5.5.1</span> L’investigation<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#linvestigation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Pendant l’investigation nous devons collecter et analyser les données de
+nos terminaux impactés par l’attaque ou susceptible d’être compromis.
+Nous procédons en général</p>
+<ol style="list-style-type: lower-roman">
+<li><p>en définissant premièrement des questions auxquelles nous n’avons
+pas encore des réponses</p></li>
+<li><p>en collectant les données nécessaires pour répondre à ces questions</p></li>
+<li><p>en analysant ces données pour y retirer de l’information
+intelligente</p></li>
+<li><p>en répondant enfin à nos questions</p></li>
+</ol>
+<p>Concrètement nos questions seront orientées selon l’avancée de notre
+réponse. En début d’investigation nous allons d’abord chercher à trier
+les données reçues pour se focaliser sur les pistes qui nous semblent le
+plus pertinentes (c’est l’étape de <strong>triaging</strong>). Nous allons nous
+demander quels sont les terminaux compromis, à quel niveau sont-ils
+impactés, etc. ? Si notre phase de détection est optimale nous aurions
+déjà la réponse à certaines de ces questions.</p>
+<p>Ensuite nous allons approfondir notre questionnement en nous demandant,
+qui est l’acteur présent au sein de notre système, quand a-t-il pénétré
+notre réseau, quels sont ses objectifs ? À ce moment nous faisons de
+l’analyse forensique pour corréler nos données collecter avec les
+actions de l’attaquant pour en extraire des informations factuelles.
+Cette étape nous amène à approfondir davantage le questionnement afin de
+trouver des preuves tangibles, comme la recherche d'un fichier
+spécifique sur une machine distante dans un état déterminé.</p>
+</div>
+<div id="latténuation" class="section level3 hasAnchor" number="5.5.2">
+<h3><span class="header-section-number">5.5.2</span> L’atténuation<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#latténuation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Durant l’étape d’atténuation notre souhait est de minimiser l’impact de
+l’attaque en cours ou subis. Cela peut être de bloquer les connexions
+réseaux sur les machines compromises. L’atténuation est cruciale pour
+empêcher l’avancée de l’attaque en plus de nous faire gagner du temps
+dans l’élimination de la menace. Elle devrait en principe se faire en
+parallèle de l’investigation, dès la détection de la menace. Cependant
+certaines équipes priorisent d’autres tâches de réponse par manque de
+ressources humaines.</p>
+<p>Ce procédé dépend de l’attaque subie, ainsi nous n’automatiserons pas
+l’atténuation d’une infection par un fichier malveillant ou d’une
+attaque par dénis de service. Notre processus doit donc prendre en
+compte les éléments fournis lors de la phase de détection pour orienter
+les actions à mener.</p>
+<p>Nous pouvons également ajouter sur cette optique d’automatisation le
+procédé de <strong>remédiation</strong> qui consiste à remettre en condition
+opérationnelle nos services. De même un processus de remédiation dépend
+du type d’attaque subie mais en plus elle dépend également de notre
+architecture et des composants compromis.</p>
+<p>À chacune de ces étapes nous devons évaluer le niveau d’automatisation
+voulu comme aborder plus haut pour pouvoir ajuster nos efforts à nos
+besoins. Voyant à quoi cela peut ressembler pour la plupart des
+organisations.</p>
+</div>
+<div id="automatisation-contextuelle" class="section level3 hasAnchor" number="5.5.3">
+<h3><span class="header-section-number">5.5.3</span> Automatisation contextuelle<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#automatisation-contextuelle" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Toujours en se basant sur l’approche du Dr Brian Carrier, dans la
+majorité des organisations nous allons vouloir premièrement automatiser
+en totalité les étapes qui ne nécessitent pas une prise de décision
+humaine. En effet, nous pensons que ces personnes ont davantage tendance
+à classer leurs alertes, préfèrent sous-traiter les enquêtes complexes
+et ne disposent pas de suffisamment de ressources pour investir dans une
+plateforme d'apprentissage qui les aiderait à comprendre ce qui est
+habituel et comment coordonner les différentes phases de la réponse, y
+compris les environnements honeypot et autres.</p>
+<div id="la-collecte-de-données" class="section level4 hasAnchor" number="5.5.3.1">
+<h4><span class="header-section-number">5.5.3.1</span> La collecte de données<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#la-collecte-de-données" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>L’Agence Nationale de la Sécurité de Systèmes d’Information nous propose
+DFIR ORC (Outil de recherche de compromission), qui nous aident à
+collecter les données de nos terminaux et nous facilite dans nos
+analyses forensiques. Ses fonctionnalités permettent aussi bien la
+recherche et l’extraction de preuve que l’analyse des données collectées
+: “Il a été entièrement conçu afin de fonctionner dans l’écosystème
+Microsoft Windows de façon décentralisée et à grande échelle” dit
+l’ANSSI.</p>
+</div>
+<div id="lanalyse-de-données-de-compromission" class="section level4 hasAnchor" number="5.5.3.2">
+<h4><span class="header-section-number">5.5.3.2</span> L’analyse de données de compromission<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#lanalyse-de-données-de-compromission" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Hayabusa est un outil de réponse à incident développé par les
+professionnels de la sécurité de Yamato au Japon. Il permet d'analyser
+les événements Windows pour détecter les indices de compromission,
+d'examiner ces preuves et de créer une chronologie détaillée de
+l'attaque, entre autres fonctionnalités.</p>
+<p>Ensuite, une organisation de taille moyenne souhaitera sûrement
+automatiser de manière partielle certaines décisions faciles à prendre
+et sans impacts sur la gestion de l’incident comme le choix des
+terminaux à analyser dans la suite de l’investigation.</p>
+</div>
+<div id="lanalyse-de-comportement-anormal-avec-la-prévention-des-intrusions" class="section level4 hasAnchor" number="5.5.3.3">
+<h4><span class="header-section-number">5.5.3.3</span> L’analyse de comportement anormal avec la prévention des intrusions<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#lanalyse-de-comportement-anormal-avec-la-prévention-des-intrusions" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>En laissant la machine ou des outils identifier les éléments qui leur
+semblent suspects. Les composants et logiciels de type IPS (Intrusion
+Prevention System) bloquent activement les menaces en fonction des
+politiques de sécurité définies. Nous avons par exemple Palo Alto
+Networks Threat Prevention, un IPS qui détecte et bloque les exploits de
+vulnérabilité et les logiciels malveillants qu’il reconnaît.</p>
+<p>En acquérant de la maturité nous pourrons être amenés à automatiser les
+actions d’atténuation voire de remédiation sur les conséquences de
+l’attaque sur notre système d’information.</p>
+</div>
+<div id="la-réalisation-automatique-des-actions-datténuation" class="section level4 hasAnchor" number="5.5.3.4">
+<h4><span class="header-section-number">5.5.3.4</span> La réalisation automatique des actions d’atténuation<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#la-réalisation-automatique-des-actions-datténuation" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Bloquer un utilisateur ou couper l’accès au réseau à un poste de travail
+sont des actions plutôt simples à exécuter quand nous sommes en pleine
+réponse à incident, se relayer sur un processus automatiser pour ces
+tâches connues d’avance, gâcherait du temps et des compétences que nous
+aurions pu investir dans de l’analyse de preuves.</p>
+</div>
+<div id="lautomatisation-de-la-réponse-avec-les-plateformes-soar" class="section level4 hasAnchor" number="5.5.3.5">
+<h4><span class="header-section-number">5.5.3.5</span> L’automatisation de la réponse avec les plateformes SOAR<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#lautomatisation-de-la-réponse-avec-les-plateformes-soar" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Dans ce contexte l’intégration entre nos différents outils au sein de
+notre plateforme de sécurité accroît leur capacité d’apprentissage
+continue en mettant régulièrement à jour leur base de connaissance sur
+les alertes que nous avons déjà subies. Les solutions SOAR (<em>Security
+Orchestration, Automation, and Response</em>) aident concrètement les
+équipes de sécurité à gérer et à répondre aux incidents de sécurité de
+manière plus efficace et automatisée. Elles combinent l'orchestration,
+l'automatisation et la gestion des réponses aux incidents en un seul
+outil.</p>
+<ol style="list-style-type: lower-roman">
+<li><p><strong>Orchestration</strong> : Intégration des différents outils de sécurité et
+des processus pour assurer une réponse coordonnée et cohérente aux
+incidents.</p></li>
+<li><p><strong>Automatisation</strong> : Exécution automatique de tâches répétitives et
+routinières pour réduire la charge de travail manuel et accélérer la
+réponse.</p></li>
+<li><p><strong>Gestion des réponses</strong> : Centralisation des informations sur les
+incidents, la gestion des workflows, et la documentation des
+actions entreprises pour une meilleure analyse post-incident.</p></li>
+</ol>
+<p>Nous pouvons citer Splunk SOAR, une solution de sécurité présentant des
+fonctionnalités de SOAR qui s’intègre parfaitement avec CyberTriage une
+solution d’accompagnement à l’analyse forensique qui automatise un grand
+nombre d’actions répétitives pour un analyste, notamment</p>
+<ul>
+<li><p>La collecte d’artefacts</p></li>
+<li><p>L’identification de scénario d’attaque</p></li>
+<li><p>La priorisation d’éléments à analyser et la recommandation
+d’artefacts pour une investigation approfondie</p></li>
+<li><p>La réalisation de frises chronologiques de l’attaque</p></li>
+<li><p>La collaboration entre différents analystes directement au sein de
+l’outil</p></li>
+</ul>
+<p>Voici en somme les processus de sécurité que nous pouvons automatiser et
+optimiser, du cycle de développement à la réponse aux incidents. Ces
+standards de l’industrie nous aident à atteindre une posture idéale en
+matière de sécurité informatique. Toutefois l’implémentation de ces
+dernières doit être en adéquation avec nos besoins, notre contexte
+métier et notre maturité organisationnelle.</p>
+<p>En tant qu’ingénieur sécurité en apprentissage chez Shadow et ayant
+développé une appétence pour l’automatisation des processus de sécurité
+informatique en général et les pratiques DevSecOps en particulier, mon
+rôle a été de mettre en place les recommandations que nous venons
+d’étudier. Abordons donc les étapes concrètes et les outils que j’ai
+utilisés dans le contexte de mise en place d’une plateforme de sécurité
+automatisé chez Shadow.</p>
+<hr />
+
+</div>
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>Mentionné dans la conférence : <a href="https://www.youtube.com/watch?v=P1ghXLKb_1Y">To Automate or Not to Automate :
+That is the Incident Response
+Question</a><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>L’article de RedHat <a href="https://www.redhat.com/en/topics/devops/shift-left-vs-shift-right"><em>Shift-Left vs
+Shift-Right</em></a>
+aborde en profondeur ce sujet.<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p><a href="https://owasp.org/www-project-devsecops-guideline/">OWASP DevSecOps
+Guideline</a><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p><a href="https://www.devsecops.org/blog/2015/2/15/what-is-devsecops">What is
+DevSecOps</a><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p><a href="https://www.devsecops.org/blog/2016/5/20/-security">Shifting Security to the
+Left</a><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#fnref5" class="footnote-back">↩︎</a></p></li>
+<li id="fn6"><p><a href="https://owasp.org/www-project-devsecops-guideline/">OWASP DevSecOps
+Guideline</a><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#fnref6" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+<script type="application/json" class="js-hypothesis-config">
+
+{"showHighlights": false}
+
+</script>
+<script src="https://hypothes.is/embed.js" async></script>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="mise-en-place-des-pratiques-au-sein-de-shadow.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["prothesis_germain.pdf"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

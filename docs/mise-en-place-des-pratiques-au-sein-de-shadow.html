@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapitre 6 Mise en place des pratiques au sein de Shadow | Automatisation des processus de sécurité</title>
+  <meta name="description" content="Thèse professionnelle réalisée dans le cadre de mon Mastère Spécialisé Expert Cybersécurité en alternance chez Shadow" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapitre 6 Mise en place des pratiques au sein de Shadow | Automatisation des processus de sécurité" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="https://bookdown.org/yihui/rmarkdown//assets/img/utt_banner.jpg" />
+  <meta property="og:description" content="Thèse professionnelle réalisée dans le cadre de mon Mastère Spécialisé Expert Cybersécurité en alternance chez Shadow" />
+  <meta name="github-repo" content="djuhnix/prothesis" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapitre 6 Mise en place des pratiques au sein de Shadow | Automatisation des processus de sécurité" />
+  
+  <meta name="twitter:description" content="Thèse professionnelle réalisée dans le cadre de mon Mastère Spécialisé Expert Cybersécurité en alternance chez Shadow" />
+  <meta name="twitter:image" content="https://bookdown.org/yihui/rmarkdown//assets/img/utt_banner.jpg" />
+
+<meta name="author" content="Germain Jr. OLEA-OYOUGOU" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"/>
+<link rel="next" href="conclusion.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+<link rel="stylesheet" href="assets/css/toc.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Thèse professionnelle - Automatisation des processus de sécurité</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Résumé</a></li>
+<li class="chapter" data-level="2" data-path="glossaire.html"><a href="glossaire.html"><i class="fa fa-check"></i><b>2</b> Glossaire</a></li>
+<li class="chapter" data-level="3" data-path="déclaration-sur-lhonneur.html"><a href="déclaration-sur-lhonneur.html"><i class="fa fa-check"></i><b>3</b> Déclaration sur l’honneur</a></li>
+<li class="chapter" data-level="4" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>4</b> Introduction</a></li>
+<li class="chapter" data-level="5" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><i class="fa fa-check"></i><b>5</b> Etat de l'art de l'automatisation des processus de sécurité</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#contexte-sur-lautomatisation-des-processus-de-sécurité"><i class="fa fa-check"></i><b>5.1</b> Contexte sur l’automatisation des processus de sécurité</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#la-sécurité-informatique"><i class="fa fa-check"></i><b>5.1.1</b> La sécurité informatique</a></li>
+<li class="chapter" data-level="5.1.2" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#les-processus-de-sécurité-automatisées"><i class="fa fa-check"></i><b>5.1.2</b> Les processus de sécurité automatisées</a></li>
+<li class="chapter" data-level="5.1.3" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#le-cycle-de-développement-sécurisé"><i class="fa fa-check"></i><b>5.1.3</b> Le cycle de développement sécurisé</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#introduction-à-lautomatisation"><i class="fa fa-check"></i><b>5.2</b> Introduction à l’automatisation</a></li>
+<li class="chapter" data-level="5.3" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#prévention-et-devsecops"><i class="fa fa-check"></i><b>5.3</b> Prévention et DevSecOps</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#culture-devsecops"><i class="fa fa-check"></i><b>5.3.1</b> Culture DevSecOps</a></li>
+<li class="chapter" data-level="5.3.2" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#comprendre-son-besoin-en-sécurité"><i class="fa fa-check"></i><b>5.3.2</b> Comprendre son besoin en sécurité</a></li>
+<li class="chapter" data-level="5.3.3" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#conception-sécurisé-et-industrialisation-des-tests"><i class="fa fa-check"></i><b>5.3.3</b> Conception sécurisé et industrialisation des tests</a></li>
+<li class="chapter" data-level="5.3.4" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#surveiller-continuellement"><i class="fa fa-check"></i><b>5.3.4</b> Surveiller continuellement</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#détection-de-nouvelles-menaces"><i class="fa fa-check"></i><b>5.4</b> Détection de nouvelles menaces</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#détection-au-sein-du-réseau"><i class="fa fa-check"></i><b>5.4.1</b> Détection au sein du réseau</a></li>
+<li class="chapter" data-level="5.4.2" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#détection-au-sein-des-terminaux-du-système-informatique"><i class="fa fa-check"></i><b>5.4.2</b> Détection au sein des terminaux du système informatique</a></li>
+<li class="chapter" data-level="5.4.3" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#gestion-des-événements-détecter"><i class="fa fa-check"></i><b>5.4.3</b> Gestion des événements détecter</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#réponse-automatisée-à-un-incident"><i class="fa fa-check"></i><b>5.5</b> Réponse automatisée à un incident</a>
+<ul>
+<li class="chapter" data-level="5.5.1" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#linvestigation"><i class="fa fa-check"></i><b>5.5.1</b> L’investigation</a></li>
+<li class="chapter" data-level="5.5.2" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#latténuation"><i class="fa fa-check"></i><b>5.5.2</b> L’atténuation</a></li>
+<li class="chapter" data-level="5.5.3" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#automatisation-contextuelle"><i class="fa fa-check"></i><b>5.5.3</b> Automatisation contextuelle</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="mise-en-place-des-pratiques-au-sein-de-shadow.html"><a href="mise-en-place-des-pratiques-au-sein-de-shadow.html"><i class="fa fa-check"></i><b>6</b> Mise en place des pratiques au sein de Shadow</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="mise-en-place-des-pratiques-au-sein-de-shadow.html"><a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#shift-left-retro-planning"><i class="fa fa-check"></i><b>6.1</b> Shift Left Retro Planning</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="mise-en-place-des-pratiques-au-sein-de-shadow.html"><a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#devops-chez-shadow"><i class="fa fa-check"></i><b>6.1.1</b> DevOps chez Shadow</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="mise-en-place-des-pratiques-au-sein-de-shadow.html"><a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#pratiques-devsecops-chez-shadow"><i class="fa fa-check"></i><b>6.2</b> Pratiques DevSecOps chez Shadow</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="mise-en-place-des-pratiques-au-sein-de-shadow.html"><a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#programme-de-sensibilisation"><i class="fa fa-check"></i><b>6.2.1</b> Programme de sensibilisation</a></li>
+<li class="chapter" data-level="6.2.2" data-path="mise-en-place-des-pratiques-au-sein-de-shadow.html"><a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#détection-de-secrets"><i class="fa fa-check"></i><b>6.2.2</b> Détection de secrets</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="mise-en-place-des-pratiques-au-sein-de-shadow.html"><a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#automatisation-des-processus-de-détection-et-de-réponse-chez-shadow"><i class="fa fa-check"></i><b>6.3</b> Automatisation des processus de détection et de réponse chez Shadow</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="mise-en-place-des-pratiques-au-sein-de-shadow.html"><a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#détection"><i class="fa fa-check"></i><b>6.3.1</b> Détection</a></li>
+<li class="chapter" data-level="6.3.2" data-path="mise-en-place-des-pratiques-au-sein-de-shadow.html"><a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#réponse"><i class="fa fa-check"></i><b>6.3.2</b> Réponse</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="mise-en-place-des-pratiques-au-sein-de-shadow.html"><a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#amélioration-continue-et-prochaines-étapes"><i class="fa fa-check"></i><b>6.4</b> Amélioration continue et prochaines étapes</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>7</b> Conclusion</a></li>
+<li class="chapter" data-level="8" data-path="bibliographie.html"><a href="bibliographie.html"><i class="fa fa-check"></i><b>8</b> Bibliographie</a></li>
+<li class="chapter" data-level="9" data-path="annexes.html"><a href="annexes.html"><i class="fa fa-check"></i><b>9</b> Annexes</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="annexes.html"><a href="annexes.html#le-cycle-de-développement-sécurisé-1"><i class="fa fa-check"></i><b>9.1</b> Le cycle de développement sécurisé</a></li>
+<li class="chapter" data-level="9.2" data-path="annexes.html"><a href="annexes.html#fonctionnalités-dune-solution-de-sensibilisation-à-la-sécurité"><i class="fa fa-check"></i><b>9.2</b> Fonctionnalités d’une solution de sensibilisation à la sécurité</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Automatisation des processus de sécurité</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="mise-en-place-des-pratiques-au-sein-de-shadow" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">Chapitre 6</span> Mise en place des pratiques au sein de Shadow<a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#mise-en-place-des-pratiques-au-sein-de-shadow" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Dans son contexte et dans son processus de développement, Shadow prit la
+décision de s’orienter vers la philosophie DevOps en mettant en place un
+certain nombre de procédés et d’outillages pour automatiser la mise en
+condition opérationnelle de ses produits et de ses outils internes.</p>
+<p>Dans cette optique nous avons également voulu remettre la sécurité au
+centre de ces procédés pour nous permettre de réaliser un Shift Left
+avec nos processus de sécurité. Nous allons donc aborder dans cette
+partie les pratiques DevOps déjà en place chez Shadow avant de parler de
+notre plan vers le Shift Left puis nous verrons les actions et outils
+que j’ai mis en place pour concrétiser ce plan et nous finirons par une
+projection sur l’automatisation des processus de détection et de
+réponse.</p>
+<div id="shift-left-retro-planning" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> Shift Left Retro Planning<a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#shift-left-retro-planning" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Pour commencer à Shift Left, la première des choses est de réaliser une
+prise de conscience au sein de l’équipe sécurité d’un besoin d’évolution
+en ce qui concerne les pratiques de sécurité déjà en place au sein du
+cycle de développement. Par la suite réaliser un Shift Left implique une
+symbiose entre évolution culturelle, entraînement, intégration d’outils
+et de nouveau processus.</p>
+<p>Pour cela, Florent, Head of Security chez Shadow, intégra dans la vision
+long terme de la politique de sécurité de Shadow des étapes en vue de
+réaliser un Shift Left au sein de nos processus. Parmi ces étapes nous
+pouvons retrouver :</p>
+<ol style="list-style-type: lower-roman">
+<li><p>la sensibilisation des collaborateurs aux problématiques de sécurité
+de l’organisation,</p></li>
+<li><p>l’intégration de différents outils permettant l’automatisation de
+certains processus,</p></li>
+<li><p>la mise en places de pratiques DevSecOps,</p></li>
+<li><p>la gestion de vulnérabilité,</p></li>
+<li><p>la modélisation des menaces auxquelles Shadow pourrait faire face.</p></li>
+</ol>
+<p>Certaines de ces étapes ont pu être réalisées en parallèle pendant que
+d’autres nécessitent une certaine maturité organisationnelle pour être
+débutées comme la modélisation des menaces. Cela est possible car Shadow
+s’est naturellement tourné vers une approche DevOps dans sa genèse. Bien
+qu’elles ne soient pas un prérequis pour réaliser un Shift Left, les
+pratiques DevOps procurent une bonne base pour procéder à ce changement
+tout comme l’approche DevSecOps se présente comme un fil rouge pour nous
+aider dans notre démarche.</p>
+<div id="devops-chez-shadow" class="section level3 hasAnchor" number="6.1.1">
+<h3><span class="header-section-number">6.1.1</span> DevOps chez Shadow<a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#devops-chez-shadow" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>DevOps est avant tout une approche collaborative entre les équipes de
+développement et les équipes opérationnelles qui se suit par un certain
+nombre de pratiques et d’automatisation tout au long du cycle de
+développement. Shadow possède dans toutes ses équipes un cycle
+d’intégration continue et de déploiement continu (CI/CD). Ces derniers
+incluent la plupart du temps une phase de linting, packaging puis de
+build intégré à des outils relativement modernes bien que variant d’une
+équipe à l’autre.</p>
+<p><img src="assets/img/sec_ci_cd.png" />
+Par conséquent notre prochaine étape dans
+l’évolution de nos pratiques DevOps consiste à standardiser nos procédés
+et nos outils tout en incluant les tests de sécurité au plus tôt dans
+nos CI.</p>
+</div>
+</div>
+<div id="pratiques-devsecops-chez-shadow" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Pratiques DevSecOps chez Shadow<a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#pratiques-devsecops-chez-shadow" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Nous avons souligné que l'adoption d'une approche DevSecOps engage
+tous les métiers intervenant dans le cycle de développement, en les
+rendant responsables de la sécurité. Cette culture est tout aussi
+essentielle que l'automatisation des processus. C'est pourquoi nous
+avons mis en place un programme de sensibilisation à la sécurité
+informatique à destination de nos collaborateurs.</p>
+<div id="programme-de-sensibilisation" class="section level3 hasAnchor" number="6.2.1">
+<h3><span class="header-section-number">6.2.1</span> Programme de sensibilisation<a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#programme-de-sensibilisation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Pour établir une culture de collaboration sur les sujets de sécurité
+nous devons sensibiliser nos collaborateurs aux risques de sécurité, aux
+bonnes pratiques et aux différents types d’attaque qui existent,
+notamment celle à laquelle ils sont le plus susceptibles d’être
+vulnérable : le phishing. En effet la majorité des organisations qui se
+font compromettre réussissent un accès initial grâce aux phishings car
+un collaborateur n’a pas été assez précautionneux dans la vérification
+de l’authenticité de l'e-mail reçu.</p>
+<p>Mon objectif était donc de trouver une solution permettant de faire
+grandir les connaissances en sécurité de l’information au sein de sein
+de Shadow, tout en entraînant nos collègues à être alerte lors de la
+réception d’un e-mail paraissant suspect.</p>
+<p>Cela nous a nécessités différentes étapes</p>
+<ol style="list-style-type: lower-roman">
+<li><p>Comprendre les lacunes et les besoins de renforcement en culture de
+sécurité informatique</p></li>
+<li><p>Entraîner nos collaborateurs de manière régulière</p></li>
+<li><p>Evaluer les progrès avec des exercices de simulations</p></li>
+<li><p>Répéter cela dans une optique d’amélioration continue</p></li>
+</ol>
+<p>Dans une philosophie d’automatisation de processus de sécurité, nous
+avons compris que réaliser ces étapes manuellement avec la taille de
+notre équipe de sécurité serait très chronophage et perdrait
+continuellement de la valeur par rapport à nos occupations quotidiennes.
+La charge qui m’a été accordée fut de faire une analyse comparative de
+différentes solutions et services de sensibilisation à la sécurité
+informatique proposant des modules d’entraînement. Je me suis donc basé
+sur la liste de fonctionnalité suivante avec leur priorité pour choisir
+une solution correspondant à nos besoins. (Voir annexe 2)</p>
+<p>Après avoir établi une liste de solutions open source et payantes, en
+priorisant les solutions européennes, car Shadow s'oriente vers la
+souveraineté numérique, j'ai dû évaluer chacune de ces solutions à
+travers des échanges commerciaux, des démonstrations et des phases de
+PoC (preuve de concept) sur une population donnée d'employés de Shadow,
+puis filtrer celles qui nous convenaient aussi bien fonctionnellement
+que financièrement. Le ressenti des futurs utilisateurs a également été
+pris en compte dans le choix de la solution, ce qui nous a permis
+d'obtenir une moyenne pondérée de chaque solution à l'aide des notes
+que les utilisateurs — nos collaborateurs — ont pu attribuer à ces
+solutions en se basant sur des critères préalablement définis.</p>
+<p>J’introduis donc Riot une solution dédiée à la sensibilisation à la
+sécurité informatique. Elle vise à former les employés d'une entreprise
+aux bonnes pratiques en matière de sécurité informatique. Riot propose
+une approche ludique et engageante pour aider les utilisateurs à mieux
+comprendre les menaces de sécurité et à adopter les comportements
+appropriés pour se protéger et protéger leur organisation.</p>
+<p>Voici quelques caractéristiques de Riot :</p>
+<ol style="list-style-type: lower-roman">
+<li><p><strong>Phishing Simulation</strong> : Riot permet de créer des campagnes de
+simulation d'attaques de phishing pour évaluer et former les
+employés à reconnaître les tentatives d'hameçonnage.</p></li>
+<li><p><strong>Formation via Albert</strong> : La plateforme propose des modules
+interactifs et des quiz pour sensibiliser les utilisateurs aux
+risques liés à la sécurité informatique réaliser par Albert un robot
+qui envoie des messages de sensibilisation directement dans
+l'environnement de travail des utilisateurs, Slack pour notre cas.</p></li>
+<li><p><strong>Personnalisation</strong> : Les contenus de formation peuvent être
+personnalisés en fonction de nos besoins et du niveau de
+connaissance des utilisateurs.</p></li>
+<li><p><strong>Suivi et Reporting</strong> : Riot fournit des outils pour suivre
+l'engagement des utilisateurs et mesurer l'efficacité des
+campagnes de sensibilisation.</p></li>
+<li><p><strong>Approche Ludique</strong> : Pour rendre l'apprentissage plus attractif,
+Riot intègre des éléments de gamification, comme des scores et des
+classements.</p></li>
+</ol>
+<p>Riot est pour nous un outil complet pour renforcer notre posture en
+sécurité informatique en impliquant activement nos collègues dans le
+processus de sensibilisation. Cela favorise une culture de collaboration
+et d'échange sur les sujets de sécurité que nous souhaitons instaurer.</p>
+<p>Parallèlement à cette sensibilisation continue, nous avons poursuivi
+notre programme de Shift Left en développant un outil de détection de
+valeurs secrètes pour nos projets internes versionnés sur GitLab</p>
+</div>
+<div id="détection-de-secrets" class="section level3 hasAnchor" number="6.2.2">
+<h3><span class="header-section-number">6.2.2</span> Détection de secrets<a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#détection-de-secrets" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>La détection de secrets sur les projets versionnés est l’une des
+premières étapes dans un processus de Shift Left. L’objectif étant de
+s’assurer qu’aucune information sensible ne soit retrouvée sur un dépôt
+git. En effet plusieurs compromissions surviennent suite à la découverte
+d’informations sensibles poussée sur des projets comme des clés d’API.
+Nous devons donc analyser nos commits à la recherche de toutes données
+secrètes.</p>
+<p>L'approche idéale consiste à détecter et à prévenir l'exposition de
+données sensibles avant qu'elles n'atteignent le dépôt, car elles sont
+alors visibles dans l'historique. Dans le cas des plateformes
+d'hébergement de code, les secrets peuvent encore traîner sur le web et
+faire l'objet de recherches après avoir été retirés du dépôt. Une
+approche complémentaire consiste à analyser le dépôt à la recherche
+d'informations sensibles, puis à les supprimer ; il convient de noter
+que si des informations confidentielles sont divulguées, c'est
+qu'elles sont déjà compromises et qu'elles doivent être invalidées. La
+détection de secrets implique donc d’avoir une bonne méthodologie de
+gestion de secrets au sein de l’organisation. Nous utilisons la solution
+Vault de Hashicorp à cet effet. Elle permet de stocker les secrets de
+manière sécurisée, en les chiffrant avant de les sauvegarder dans une
+base de données. Vault fournit un système de contrôle d'accès rigoureux
+qui définit qui peut accéder à quels secrets. Les politiques d'accès
+peuvent être configurées pour permettre un contrôle granulaire. En plus
+de cela il est également possible de gérer la rotation des clés et de
+créer des automatisations avec toutes ces fonctionnalités. Chez Shadow
+notre plateforme de gestion de secrets est automatiquement déployée et
+configuré de manière déclarative en Infra as Code, réduisant d’office la
+charge de travail pour toutes les équipes.</p>
+<p>De ce fait nous savons que faire lors de l’identification d’un nouveau
+secret.</p>
+<div id="comment-détecter-des-secrets" class="section level4 hasAnchor" number="6.2.2.1">
+<h4><span class="header-section-number">6.2.2.1</span> Comment détecter des secrets<a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#comment-détecter-des-secrets" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Pendant notre processus de réflexion sur la mise en place de cette
+pratique au sein des équipes de développement de Shadow, nous avons fait
+une étude sur la détection de secrets sur les dépôts git et l’endroit
+idéal pour le faire selon notre contexte. Il est intéressant de noter
+que Shadow, de son passé de start-up a gardé un long moment une
+philosophie delivery-first, c’est-à-dire prioriser la livraison aux
+détails opérationnels ou de sécurité. De ce fait chaque équipe n’est pas
+alignée sur un standard dans leur cycle de développement. Ainsi, dans
+une vision d’implémentation de bonnes pratiques et d’amélioration des
+processus en cours nous avons quelques contraintes organisationnelles et
+une once de nostalgie vis-à-vis des processus déjà en place.</p>
+<p>Nous avons vu que la détection de secrets peut se faire</p>
+<ul>
+<li><p><strong>Localement</strong> avant que le code ne soit versionné à l’aide de
+pre-commit, ce qui implique une détection préalable du secret bien
+que dépendant de la volonté de l’utilisateur à implémenter l’outil
+proposé</p></li>
+<li><p><strong>Pendant l’intégration continue</strong> (CI), un secret détecté à ce
+niveau serait déjà compromis, néanmoins l’équipe en charge serait la
+mieux placée pour juger de la pertinence du secret détecté, du
+processus d’invalidation et de la correction du code impliqué.</p></li>
+<li><p><strong>Durant une analyse des sources après que le code ait été poussé</strong>,
+cela est à la charge de l’équipe sécurité et implique une bonne
+gestion des secrets remontée tout en prenant en compte
+l’identification des faux positifs. Le défaut étant que ce procédant
+est non bloquant dans le cycle de développement et le processus
+d’invalidation, restant à la charge des équipes de développement ne
+serait pas nécessairement immédiat.</p></li>
+</ul>
+<p>Cette dernière solution nous a paru être un bon compromis pour notre
+situation. Nous avons donc développé Gitleaker, une API de détection de
+secrets exposées qui agit à chaque fois qu’un nouveau code est poussé
+sur notre espace au sein de la plateforme GitLab et notifie l’auteur sur
+Slack en cas de nouveaux secrets exposés.</p>
+</div>
+<div id="gitleaker" class="section level4 hasAnchor" number="6.2.2.2">
+<h4><span class="header-section-number">6.2.2.2</span> Gitleaker<a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#gitleaker" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Gitleaker utilise <em>gitleaks</em> comme outil de détection de secrets, il
+permet de rechercher divers types d’information sensible en se basant
+sur le contenu de l’historique de commits. D’autres outils existent
+comme</p>
+<ul>
+<li><p><em>gittyleaks</em> : Recherche d'informations sensibles pour un dépôt git
+un peu comme <em>gitleaks</em>, cependant il est plus vieux et moins
+maintenu que <em>gitleaks</em>.</p></li>
+<li><p><em>git-secrets</em> : Empêche de versionner des secrets grâce à un module
+complémentaire qui s’intègre à la commande <em>git.</em></p></li>
+</ul>
+<p><img src="assets/img/gitleaks_webhooks_workflow.png" />
+Voici un schéma d’architecture décrivant
+également le processus de traitement d’une requête</p>
+<p>Durant le processus de développement j’ai dû prendre en compte diverses
+contraintes pour assurer que l’API supporte de fortes charges et soit à
+même d’évoluer rapidement. D’où la présence d’un modèle de file
+d’attente utilisant Redis et la librairie python celery. J’ai également
+pu éprouver le cycle d’intégration et de déploiement en continu expliqué
+plus haut afin de justifier l’application de nouvelles pratiques
+DevSecOps nous permettant d’adopter une approche de Shift Left.</p>
+<p>La détection de secret n’est qu’une première brique dans l’exécution de
+tests de sécurité au sein de notre cycle d’intégration continue. La
+prochaine étape est d’ajouter des outils d’analyse statique et dynamique
+de code pour identifier les vulnérabilités qui s’y cache et d’avoir une
+approche de gestion de ces vulnérabilités permettant d’évaluer, atténuer
+ou remédier le risque d’exploitation de ces dernières. Dans cette
+optique nous avons identifié DefectDojo.</p>
+</div>
+<div id="defectdojo" class="section level4 hasAnchor" number="6.2.2.3">
+<h4><span class="header-section-number">6.2.2.3</span> DefectDojo<a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#defectdojo" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>DefectDojo est une plateforme de gestion de vulnérabilités open source
+proposant des fonctionnalités d’importation de rapports d’une multitude
+d’outils de sécurité, de suivi d’état de la vulnérabilité — de
+l’identification à la remédiation ou l’acceptation — de déduplication
+avec les vulnérabilités déjà remontées et possède une API permettant de
+réaliser diverses intégrations et automatisation entre nos outils et les
+fonctionnalités offertes par la plateforme.</p>
+<p>En vue d’intégrer cette plateforme à notre catalogue, je me suis chargé
+de juger la pertinence de cette dernière dans un environnement local en
+créant un processus automatisé dont l’objet fut d’importer les résultats
+d’une analyse statique de code — utilisant Semgrep un outil d’analyse
+multilangage — réalisé à chaque nouveau code poussé sur le dépôt.
+L’objectif étant que chaque utilisateur ayant accès à la plateforme soit
+responsable de l’état de la vulnérabilité identifié, l’équipe sécurité
+s’occupant de l’accompagnement des équipes dans la qualification et les
+possibilités de remédiation.</p>
+<p>Concrètement ce processus automatisé se présente comme un ensemble de
+scripts bash intégré à GitLab CI, nous permettant de définir un grand
+nombre de flux et d’actions à réaliser suite à des événements survenant
+sur le dépôt. À moyen terme, nous avons l'intention de distribuer ce
+modèle pour l'intégrer à tous les projets de Shadow et faciliter ainsi
+l'intégration des outils d'analyse statique et dynamique à toutes les
+équipes.</p>
+<p>Pour poursuivre avec les processus de sécurité automatisés dans notre
+équipe, abordons comment les phases de détection et de réponse sont
+planifiées chez Shadow et quels procédés j’ai pu améliorer pour
+amoindrir la charge de travail de l’équipe sécurité.</p>
+</div>
+</div>
+</div>
+<div id="automatisation-des-processus-de-détection-et-de-réponse-chez-shadow" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> Automatisation des processus de détection et de réponse chez Shadow<a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#automatisation-des-processus-de-détection-et-de-réponse-chez-shadow" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="détection" class="section level3 hasAnchor" number="6.3.1">
+<h3><span class="header-section-number">6.3.1</span> Détection<a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#détection" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>En plus de la détection d’incident, chez Shadow nous avons également la
+détection de fraude et d’abus d’utilisation de nos services. En ce qui
+concerne Shadow PC, nous avons des requêtes au sein de nos différents
+outils qui remontent les paiements suspicieux et les comptes
+potentiellement abusifs, cependant le processus de vérification de ces
+alertes est chronophage et répétitif. Nous développons des plateformes
+et API internes pour réaliser certaines de ces tâches de manière
+automatiques. Pour Shadow Drive, j’ai eu l’honneur pendant mon projet de
+fin d’étude de mettre en place les premiers éléments de détections et de
+prévention d’intrusion sur notre infrastructure.</p>
+<p>En effet je mentionne dans mon mémoire que</p>
+<blockquote>
+<p>Nous avons donc vu qu’il était nécessaire de connaître avant toute
+chose les besoins de l’entreprise en termes de sécurité en réalisant
+une analyse de besoins suivie d’une analyse de risques. Puis de
+définir un protocole de test car il sera notre boussole lors de
+l’évaluation des solutions de sécurité qui s’offrent à nous. Dans
+notre cas, nous avons étudié les solutions éditées par OGO Security,
+CrowdSec et UBIKA qui sont des boîtes françaises spécialisés dans la
+cybersécurité. Cette étude nous a prouvé que l’agent CrowdSec était le
+meilleur compromis pour nous avec un rapport protection coût
+acceptable à l’heure actuelle. Enfin pour pérenniser la sécurité de
+notre infrastructure et l’efficacité de la solution choisie, nous
+avons jugé bon de définir un processus d’amélioration continue après
+avoir déployé en production ladite solution. (Olea, 2023)</p>
+</blockquote>
+<p>Depuis la mise ne place de manière industrielle de CrowdSec, nous avons
+commencé à être alertés des robots qui analysent internet à la recherche
+de vulnérabilités, à bloquer de manière automatique les comportements
+suspects et améliorer les capacités de la solution à ne pas notifier les
+faux positifs.</p>
+<p>De plus notre équipe étudie le déploiement de Wazuh un XDR présenté plus
+haut sur tous les terminaux et serveurs de l’entreprise pour une
+surveillance optimale des événements qui s’y produisent.</p>
+<p>En parallèle nous éprouvons également les possibilités de nos
+plateformes et outils à nous accompagner dans la résolution de nos
+incidents. Voyons donc comment nous y parvenons.</p>
+</div>
+<div id="réponse" class="section level3 hasAnchor" number="6.3.2">
+<h3><span class="header-section-number">6.3.2</span> Réponse<a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#réponse" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Comme vu dans l’Etat de l’art, automatiser la phase de réponse à
+incident en interne demande une certaine maturité de ses différents
+processus et un rapport bénéfice, coût, probabilité et impact d’une
+erreur sur le processus automatisé acceptable pour l’organisation. Chez
+Shadow notre gestion d’incident est grandement manuelle. Nous profitons
+des fonctionnalités de nos outils pour nos investigations et
+externalisons les cas d’analyse forensique. Par exemple, CrowdSec
+possède un mode <strong>replay</strong> qui permet de rejouer un fichier de
+journalisation afin d’y retrouver des signes de comportement malicieux
+et approfondir la recherche de preuves de compromission ou d’intrusion.</p>
+<p>Étant en cours de Shift Left, nous restons proactifs et définissons
+continuellement de nouvelles étapes dans notre démarche et apprenons à
+chaque nouveau jalon atteint dans notre planification.</p>
+</div>
+</div>
+<div id="amélioration-continue-et-prochaines-étapes" class="section level2 hasAnchor" number="6.4">
+<h2><span class="header-section-number">6.4</span> Amélioration continue et prochaines étapes<a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#amélioration-continue-et-prochaines-étapes" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Dans une optique d’amélioration continue de nos processus, chez Shadow
+et en général, une équipe de sécurité se doit de remettre ses pratiques
+en question pour les faire évoluer. La sécurité est un voyage, il est
+tout à fait normal de changer de route lorsque celle que nous suivons
+semble nous éloigner de notre destination.</p>
+<p>C’est pourquoi, nous avons déjà prévu la suite de nos actions avec ce
+que nous avons déjà en place.</p>
+<ol style="list-style-type: lower-roman">
+<li><p>L’ajout au sein de nos CI/CD d’outils d’analyse dynamique.</p></li>
+<li><p>Poursuivre avec la vérification en continue de conformité selon
+différents standards industriels comme SecNumCloud ou PCI DSS.</p></li>
+<li><p>Nous avons cité plus haut la gestion de vulnérabilité
+semi-automatisée avec la plateforme open source DefectDojo.</p></li>
+<li><p>La détection de comportements frauduleux dans le contexte de Shadow
+Drive grâce à CrowdSec notamment la création automatique de compte
+ou tout usage qui sortirait de nos conditions.</p></li>
+<li><p>L’implémentation de CrowdSec au sein de toutes les équipes afin de
+profiter de la fonctionnalité de partage d’information entre les
+différentes instances de la solution.</p></li>
+<li><p>L’affinement des processus de réponse et l’intégration de nos
+différents outils à une plateforme unique de gestion d’événements.</p></li>
+</ol>
+<p>Ces différents éléments sont une liste non exhaustive de ce que nous
+avons prévu de faire pour parfaire ce que nous faisons dans l’équipe
+sécurité tout en intégrant nos collaborateurs car nous avons un objectif
+commun : la satisfaction de nos utilisateurs en garantissant le maintien
+en condition opérationnelle de nos services.</p>
+
+</div>
+</div>
+<script type="application/json" class="js-hypothesis-config">
+
+{"showHighlights": false}
+
+</script>
+<script src="https://hypothes.is/embed.js" async></script>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="conclusion.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["prothesis_germain.pdf"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

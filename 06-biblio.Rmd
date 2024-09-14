@@ -1,14 +1,17 @@
 # Bibliographie
 
-Bell, L., Brunton-Spall, M., Smith, R., & Bird, J. (2017). *Agile
-Application Security.* O\'Reilly Media, Inc.LaPiedra, J. (2002). *The
-Information Security Process.* SANS Institute.Lietz, S. (2015, 06 01).
-*What is DevSecOps?* Retrieved from devsecops.org:
-https://devsecops.orgLietz, S. (2016, 06 05). *Shifting Security to the
-Left.* Retrieved from devsecops.org:
-https://www.devsecops.org/blog/2016/5/20/-securityOlea, G. (2023). *Mise
-en place d\'une stratégie de sécurité pour une plateforme SaaS d'outils
-collaboratifs.* Reims.RedHat. (2024, 03 19). *Shift left vs. shift
-right.* Retrieved from RedHat:
+Bell, L., Brunton-Spall, M., Smith, R., & Bird, J. (2017). *Agile Application Security.* O\'Reilly Media, Inc.
+
+LaPiedra, J. (2002). *The Information Security Process.* SANS Institute.
+
+Lietz, S. (2015, 06 01). *What is DevSecOps?* Retrieved from devsecops.org:
+https://devsecops.org
+
+Lietz, S. (2016, 06 05). *Shifting Security to the Left.* Retrieved from devsecops.org:
+https://www.devsecops.org/blog/2016/5/20/-security
+
+Olea, G. (2023). *Mise en place d\'une stratégie de sécurité pour une plateforme SaaS d'outils collaboratifs.* Reims.
+
+RedHat. (2024, 03 19). *Shift left vs. shift right.* Retrieved from RedHat:
 https://www.redhat.com/en/topics/devops/shift-left-vs-shift-right
 

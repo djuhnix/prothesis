@@ -2,7 +2,7 @@
 
 ## Le cycle de développement sécurisé
 
-![](./media/image11.png)
+![](./assets/img/ssdlc.png)
 
 
 ## Fonctionnalités d'une solution de sensibilisation à la sécurité
@@ -30,22 +30,4 @@
 []Tableau 1 Tableau de priorisation des
 fonctionnalités d\'une solution de sensibilisation à la sécurité
 
-[^1]: Mentionné dans la conférence : [To Automate or Not to Automate :
-    That is the Incident Response
-    Question](https://www.youtube.com/watch?v=P1ghXLKb_1Y)
 
-[^2]: L'article de RedHat [*Shift-Left vs
-    Shift-Right*](https://www.redhat.com/en/topics/devops/shift-left-vs-shift-right)
-    aborde en profondeur ce sujet.
-
-[^3]: [OWASP DevSecOps
-    Guideline](https://owasp.org/www-project-devsecops-guideline/)
-
-[^4]: [What is
-    DevSecOps](https://www.devsecops.org/blog/2015/2/15/what-is-devsecops)
-
-[^5]: [Shifting Security to the
-    Left](https://www.devsecops.org/blog/2016/5/20/-security)
-
-[^6]: [OWASP DevSecOps
-    Guideline](https://owasp.org/www-project-devsecops-guideline/)

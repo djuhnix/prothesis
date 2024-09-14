@@ -71,7 +71,7 @@ d\'investigation et de réponse en cas d\'incident.
 
 #### La réponse
 
-![](./media/image5.jpeg)
+![](./assets/img/sans-nist-ir-annotated.jpeg)
 
 La réponse consiste à réagir face à
 l'annonce d'un nouvel incident ou d'une compromission. La phase de
@@ -316,7 +316,8 @@ le OWASP Top 10 ou le CWE top 25.
 
 ### Comprendre son besoin en sécurité
 
-![](./media/image6.png)
+![](./assets/img/Hierarchy of software security needs.png)
+
 Avant de se lancer dans un programme de
 mise en place de pratiques DevSecOps une organisation doit prendre en
 compte son niveau de maturité pour pouvoir formaliser son besoin de
@@ -393,7 +394,7 @@ ses outils. Cela se traduit notamment dans la mise en place
 Le modèle OWASP d'un cycle de livraison continu adapté aux tests de
 sécurité se présente grossièrement comme suite
 
-![](./media/image7.png)
+![](./assets/img/ci_cd.png)
 
 
 Ces étapes consistent concrètement à :
@@ -721,8 +722,9 @@ processus.
 
 ## Réponse automatisée à un incident
 
-![](./media/image8.jpeg)En
-phase de réponse notre objectif est de comprendre ce qui s'est passé sur
+![](./assets/img/sans-nist-ir.jpeg)
+
+En phase de réponse notre objectif est de comprendre ce qui s'est passé sur
 notre système d'information grâce aux précieuses données obtenues lors
 de la phase de détection dans le but de trouver l'attaquant, réparer les
 dégâts que nous aurions subis et minimiser l'impact de son activité sur
@@ -907,4 +909,26 @@ rôle a été de mettre en place les recommandations que nous venons
 d'étudier. Abordons donc les étapes concrètes et les outils que j'ai
 utilisés dans le contexte de mise en place d'une plateforme de sécurité
 automatisé chez Shadow.
+
+---
+
+[^1]: Mentionné dans la conférence : [To Automate or Not to Automate :
+    That is the Incident Response
+    Question](https://www.youtube.com/watch?v=P1ghXLKb_1Y)
+
+[^2]: L'article de RedHat [*Shift-Left vs
+    Shift-Right*](https://www.redhat.com/en/topics/devops/shift-left-vs-shift-right)
+    aborde en profondeur ce sujet.
+
+[^3]: [OWASP DevSecOps
+    Guideline](https://owasp.org/www-project-devsecops-guideline/)
+
+[^4]: [What is
+    DevSecOps](https://www.devsecops.org/blog/2015/2/15/what-is-devsecops)
+
+[^5]: [Shifting Security to the
+    Left](https://www.devsecops.org/blog/2016/5/20/-security)
+
+[^6]: [OWASP DevSecOps
+    Guideline](https://owasp.org/www-project-devsecops-guideline/)
 

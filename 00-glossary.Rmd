@@ -1,6 +1,6 @@
 # Glossaire
 
-**Shift-Left** : Intégrer les tests et la sécurité dès les premières
+**Shift-Left** : Intégrer les tests et la sécurité dès les premières
 phases du développement pour détecter les problèmes plus tôt.
 
 **DevOps** : Méthode combinant développement et opérations pour livrer
@@ -18,7 +18,7 @@ intrusions ou activités malveillantes.
 **EDR/XDR** : Solutions de sécurité pour détecter et répondre aux
 menaces sur les terminaux (EDR) ou à travers plusieurs couches (XDR).
 
-**Delivery first** : Approche visant à livrer rapidement des
+**Delivery first** : Approche visant à livrer rapidement des
 fonctionnalités ou produits fonctionnels.
 
 **CI/CD** : Automatisation des tests (CI) et du déploiement (CD) dans le

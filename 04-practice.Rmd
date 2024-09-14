@@ -26,7 +26,7 @@ et de nouveau processus.
 Pour cela, Florent, Head of Security chez Shadow, intégra dans la vision
 long terme de la politique de sécurité de Shadow des étapes en vue de
 réaliser un Shift Left au sein de nos processus. Parmi ces étapes nous
-pouvons retrouver :
+pouvons retrouver :
 
 i.  la sensibilisation des collaborateurs aux problématiques de sécurité
     de l'organisation,
@@ -60,7 +60,7 @@ incluent la plupart du temps une phase de linting, packaging puis de
 build intégré à des outils relativement modernes bien que variant d'une
 équipe à l'autre.
 
-![](./media/image9.png)
+![](./assets/img/sec_ci_cd.png)
 Par conséquent notre prochaine étape dans
 l'évolution de nos pratiques DevOps consiste à standardiser nos procédés
 et nos outils tout en incluant les tests de sécurité au plus tôt dans
@@ -246,14 +246,14 @@ permet de rechercher divers types d'information sensible en se basant
 sur le contenu de l'historique de commits. D'autres outils existent
 comme
 
--   *gittyleaks* : Recherche d\'informations sensibles pour un dépôt git
+-   *gittyleaks* : Recherche d\'informations sensibles pour un dépôt git
     un peu comme *gitleaks*, cependant il est plus vieux et moins
     maintenu que *gitleaks*.
 
--   *git-secrets* : Empêche de versionner des secrets grâce à un module
+-   *git-secrets* : Empêche de versionner des secrets grâce à un module
     complémentaire qui s'intègre à la commande *git.*
 
-![](./media/image10.png)
+![](./assets/img/gitleaks_webhooks_workflow.png)
 Voici un schéma d'architecture décrivant
 également le processus de traitement d'une requête
 

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapitre 4 Introduction | Automatisation des processus de sécurité</title>
+  <meta name="description" content="Thèse professionnelle réalisée dans le cadre de mon Mastère Spécialisé Expert Cybersécurité en alternance chez Shadow" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapitre 4 Introduction | Automatisation des processus de sécurité" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="https://bookdown.org/yihui/rmarkdown//assets/img/utt_banner.jpg" />
+  <meta property="og:description" content="Thèse professionnelle réalisée dans le cadre de mon Mastère Spécialisé Expert Cybersécurité en alternance chez Shadow" />
+  <meta name="github-repo" content="djuhnix/prothesis" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapitre 4 Introduction | Automatisation des processus de sécurité" />
+  
+  <meta name="twitter:description" content="Thèse professionnelle réalisée dans le cadre de mon Mastère Spécialisé Expert Cybersécurité en alternance chez Shadow" />
+  <meta name="twitter:image" content="https://bookdown.org/yihui/rmarkdown//assets/img/utt_banner.jpg" />
+
+<meta name="author" content="Germain Jr. OLEA-OYOUGOU" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="déclaration-sur-lhonneur.html"/>
+<link rel="next" href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+<link rel="stylesheet" href="assets/css/toc.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Thèse professionnelle - Automatisation des processus de sécurité</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Résumé</a></li>
+<li class="chapter" data-level="2" data-path="glossaire.html"><a href="glossaire.html"><i class="fa fa-check"></i><b>2</b> Glossaire</a></li>
+<li class="chapter" data-level="3" data-path="déclaration-sur-lhonneur.html"><a href="déclaration-sur-lhonneur.html"><i class="fa fa-check"></i><b>3</b> Déclaration sur l’honneur</a></li>
+<li class="chapter" data-level="4" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>4</b> Introduction</a></li>
+<li class="chapter" data-level="5" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><i class="fa fa-check"></i><b>5</b> Etat de l'art de l'automatisation des processus de sécurité</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#contexte-sur-lautomatisation-des-processus-de-sécurité"><i class="fa fa-check"></i><b>5.1</b> Contexte sur l’automatisation des processus de sécurité</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#la-sécurité-informatique"><i class="fa fa-check"></i><b>5.1.1</b> La sécurité informatique</a></li>
+<li class="chapter" data-level="5.1.2" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#les-processus-de-sécurité-automatisées"><i class="fa fa-check"></i><b>5.1.2</b> Les processus de sécurité automatisées</a></li>
+<li class="chapter" data-level="5.1.3" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#le-cycle-de-développement-sécurisé"><i class="fa fa-check"></i><b>5.1.3</b> Le cycle de développement sécurisé</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#introduction-à-lautomatisation"><i class="fa fa-check"></i><b>5.2</b> Introduction à l’automatisation</a></li>
+<li class="chapter" data-level="5.3" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#prévention-et-devsecops"><i class="fa fa-check"></i><b>5.3</b> Prévention et DevSecOps</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#culture-devsecops"><i class="fa fa-check"></i><b>5.3.1</b> Culture DevSecOps</a></li>
+<li class="chapter" data-level="5.3.2" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#comprendre-son-besoin-en-sécurité"><i class="fa fa-check"></i><b>5.3.2</b> Comprendre son besoin en sécurité</a></li>
+<li class="chapter" data-level="5.3.3" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#conception-sécurisé-et-industrialisation-des-tests"><i class="fa fa-check"></i><b>5.3.3</b> Conception sécurisé et industrialisation des tests</a></li>
+<li class="chapter" data-level="5.3.4" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#surveiller-continuellement"><i class="fa fa-check"></i><b>5.3.4</b> Surveiller continuellement</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#détection-de-nouvelles-menaces"><i class="fa fa-check"></i><b>5.4</b> Détection de nouvelles menaces</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#détection-au-sein-du-réseau"><i class="fa fa-check"></i><b>5.4.1</b> Détection au sein du réseau</a></li>
+<li class="chapter" data-level="5.4.2" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#détection-au-sein-des-terminaux-du-système-informatique"><i class="fa fa-check"></i><b>5.4.2</b> Détection au sein des terminaux du système informatique</a></li>
+<li class="chapter" data-level="5.4.3" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#gestion-des-événements-détecter"><i class="fa fa-check"></i><b>5.4.3</b> Gestion des événements détecter</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#réponse-automatisée-à-un-incident"><i class="fa fa-check"></i><b>5.5</b> Réponse automatisée à un incident</a>
+<ul>
+<li class="chapter" data-level="5.5.1" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#linvestigation"><i class="fa fa-check"></i><b>5.5.1</b> L’investigation</a></li>
+<li class="chapter" data-level="5.5.2" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#latténuation"><i class="fa fa-check"></i><b>5.5.2</b> L’atténuation</a></li>
+<li class="chapter" data-level="5.5.3" data-path="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html"><a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html#automatisation-contextuelle"><i class="fa fa-check"></i><b>5.5.3</b> Automatisation contextuelle</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="mise-en-place-des-pratiques-au-sein-de-shadow.html"><a href="mise-en-place-des-pratiques-au-sein-de-shadow.html"><i class="fa fa-check"></i><b>6</b> Mise en place des pratiques au sein de Shadow</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="mise-en-place-des-pratiques-au-sein-de-shadow.html"><a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#shift-left-retro-planning"><i class="fa fa-check"></i><b>6.1</b> Shift Left Retro Planning</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="mise-en-place-des-pratiques-au-sein-de-shadow.html"><a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#devops-chez-shadow"><i class="fa fa-check"></i><b>6.1.1</b> DevOps chez Shadow</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="mise-en-place-des-pratiques-au-sein-de-shadow.html"><a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#pratiques-devsecops-chez-shadow"><i class="fa fa-check"></i><b>6.2</b> Pratiques DevSecOps chez Shadow</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="mise-en-place-des-pratiques-au-sein-de-shadow.html"><a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#programme-de-sensibilisation"><i class="fa fa-check"></i><b>6.2.1</b> Programme de sensibilisation</a></li>
+<li class="chapter" data-level="6.2.2" data-path="mise-en-place-des-pratiques-au-sein-de-shadow.html"><a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#détection-de-secrets"><i class="fa fa-check"></i><b>6.2.2</b> Détection de secrets</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="mise-en-place-des-pratiques-au-sein-de-shadow.html"><a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#automatisation-des-processus-de-détection-et-de-réponse-chez-shadow"><i class="fa fa-check"></i><b>6.3</b> Automatisation des processus de détection et de réponse chez Shadow</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="mise-en-place-des-pratiques-au-sein-de-shadow.html"><a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#détection"><i class="fa fa-check"></i><b>6.3.1</b> Détection</a></li>
+<li class="chapter" data-level="6.3.2" data-path="mise-en-place-des-pratiques-au-sein-de-shadow.html"><a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#réponse"><i class="fa fa-check"></i><b>6.3.2</b> Réponse</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="mise-en-place-des-pratiques-au-sein-de-shadow.html"><a href="mise-en-place-des-pratiques-au-sein-de-shadow.html#amélioration-continue-et-prochaines-étapes"><i class="fa fa-check"></i><b>6.4</b> Amélioration continue et prochaines étapes</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>7</b> Conclusion</a></li>
+<li class="chapter" data-level="8" data-path="bibliographie.html"><a href="bibliographie.html"><i class="fa fa-check"></i><b>8</b> Bibliographie</a></li>
+<li class="chapter" data-level="9" data-path="annexes.html"><a href="annexes.html"><i class="fa fa-check"></i><b>9</b> Annexes</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="annexes.html"><a href="annexes.html#le-cycle-de-développement-sécurisé-1"><i class="fa fa-check"></i><b>9.1</b> Le cycle de développement sécurisé</a></li>
+<li class="chapter" data-level="9.2" data-path="annexes.html"><a href="annexes.html#fonctionnalités-dune-solution-de-sensibilisation-à-la-sécurité"><i class="fa fa-check"></i><b>9.2</b> Fonctionnalités d’une solution de sensibilisation à la sécurité</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Automatisation des processus de sécurité</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="introduction" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Chapitre 4</span> Introduction<a href="introduction.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Mes deux ans d'alternance au sein de la société Shadow m'ont montré à
+quel point elle déploie des efforts pour optimiser son processus de
+déploiement. Shadow possède deux produits : Shadow PC, un ordinateur à
+hautes performances dans le Cloud accessible depuis n’importe quel
+périphérique et Shadow Drive, le stockage en ligne souverain. La gestion
+de ces deux produits nécessite le développement de plusieurs outils
+internes, avec cela un nombre de processus de maintenance assez élevés.
+Pour garder un niveau de qualité élevé et une rapidité dans ces
+processus, Shadow a misé sur l'automatisation du déploiement de
+nombreux de ses services avec la mise en place de pratiques DevOps assez
+avancées. Au sein de l'équipe sécurité nous avons senti le besoin de
+s'adapter à cette évolution en procédant à un Shift Left, c’est-à-dire
+insérer les tests de sécurité au plus tôt au sein du cycle de
+développement pour trouver et corriger les vulnérabilités le plus tôt
+possible. En opposé au Shift Right qui consiste à exécuter des tests,
+surveiller le comportement de l’utilisateur et les paramètres de
+sécurité quand le produit est déjà opérationnel.</p>
+<p>La plupart des décisions de sécurité sont prises lors des processus de
+développement et de mise en condition opérationnelle par ces équipes et
+les équipes de sécurité ne prennent que très rarement des décisions qui
+impliquent directement le produit mais plutôt quand il s’agit d’évaluer
+ou atténuer un risque. Il est difficile de se prémunir de catastrophes
+commerciales et métier en appliquant des mesures avant la définition des
+stratégies de sécurité. Pourtant ce mode de fonctionnement est encore
+courant et ralentit la vélocité des équipes de développement.</p>
+<p>Pour éviter de découvrir des vulnérabilités trop tard et de ne réagir
+qu’en cas d’incident, il est intéressant de se demander comment la mise
+en place des pratiques de sécurité automatisées au sein des processus de
+développement peut améliorer la résistance des systèmes d'information
+aux menaces qui pèsent sur une organisation et augmenter la performance
+des équipes de sécurité. En tant qu’apprenti chez Shadow j’ai eu le rôle
+de mener une analyse comparative et de mettre en place ces pratiques
+afin d’évaluer l’apport en productivité de l’amélioration de nos
+processus.</p>
+<p>Notre objectif à présent est de confronter les visions communes et
+acceptées par l’industrie sur ce sujet en apportant des pistes
+d’amélioration et en ajoutant de la valeur sur les défauts apparents. De
+ce fait pour développer la réponse à cette problématique nous allons
+étudier l’état de l’art en matière d’automatisation des processus de
+sécurité et les bénéfices que cela peut apporter tout en analysant les
+méthodologies de mise en place des pratiques et les outils à intégrer.
+En parallèle nous discuterons de l’implémentation de ces mesures au sein
+de Shadow, nous créerons un environnement propice à la pratique des
+compétences nécessaires à la mise en place de ces méthodologies. Enfin
+nous ne manquerons pas de lister les limites de ces pratiques et
+d’aborder les sujets allant au-delà de cette problématique. Toutefois
+nous ne saurons commencer sans relater le contexte de la sécurité de
+l’information et les raisons derrière l’automatisation des processus qui
+font ce domaine.</p>
+
+</div>
+<script type="application/json" class="js-hypothesis-config">
+
+{"showHighlights": false}
+
+</script>
+<script src="https://hypothes.is/embed.js" async></script>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="déclaration-sur-lhonneur.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="etat-de-lart-de-lautomatisation-des-processus-de-sécurité.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["prothesis_germain.pdf"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
